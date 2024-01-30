@@ -4,6 +4,7 @@ import org.example.db.DBConnection;
 import org.example.model.EventsEntity;
 import org.example.repository.EventsEntityRepository;
 import org.example.repository.mapper.EventsResultSetMapper;
+import org.example.servlet.dto.EventDTO;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -48,7 +49,7 @@ public class EventsEntityRepositoryImpl implements EventsEntityRepository {
         }
     }
     @Override
-    public EventsEntity save(EventsEntity eventsEntity) {
+    public EventsEntity save(EventsEntity eventDTO) {
         try(Connection connection = dbConnection.getConnection()) {
             PreparedStatement preparedStatement =
                     connection.prepareStatement("INSERT INTO events (event_name, event_city) VALUES(?,?)");

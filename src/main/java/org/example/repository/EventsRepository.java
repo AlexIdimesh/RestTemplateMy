@@ -1,6 +1,7 @@
 package org.example.repository;
 
 import org.example.model.EventsEntity;
+import org.example.servlet.dto.EventDTO;
 
 import java.sql.SQLException;
 import java.util.List;

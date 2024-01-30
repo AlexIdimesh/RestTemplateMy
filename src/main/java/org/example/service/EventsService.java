@@ -7,12 +7,11 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface EventsService {
-    EventsEntity save(EventsEntity eventsEntity);
+    EventDTO save(EventDTO eventDTO);
 
-    EventsEntity findById(Long id);
+    EventDTO findById(Long id);
 
-    List<EventsEntity> findAll() throws SQLException, ClassNotFoundException;
+    List<EventDTO> findAll() throws SQLException, ClassNotFoundException;
 
     boolean deleteById(Long id);
-
 }
