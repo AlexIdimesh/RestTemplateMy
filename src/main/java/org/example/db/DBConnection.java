@@ -1,40 +1,33 @@
 package org.example.db;
 
 import com.zaxxer.hikari.HikariDataSource;
+import org.example.util.PropertiesUtil;
+
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 public class DBConnection implements ConnectionManager {
+    public DBConnection() {
+    }
+
     private static final String DB_USERNAME = "db.username";
     private static final String DB_PASSWORD = "db.password";
-    private static final String DB_DRIVER = "driver.class.name";
     private static final String DB_URL = "db.url";
-    private static HikariDataSource dataSource;
 
-    static {
-        try{
-            Properties properties = new Properties();
-            properties.load(new FileInputStream("scr/main/java/resources/db.properties"));
-            dataSource = new HikariDataSource();
-            dataSource.setDriverClassName(properties.getProperty(DB_DRIVER));
-            dataSource.setJdbcUrl(properties.getProperty(DB_URL));
-            dataSource.setPassword(properties.getProperty(DB_PASSWORD));
-            dataSource.setUsername(properties.getProperty(DB_USERNAME));
-            dataSource.setMinimumIdle(100);
-            dataSource.setMaximumPoolSize(1000000);
-            dataSource.setAutoCommit(true);
-            dataSource.setLoginTimeout(3);
-        } catch (IOException | SQLException exception) {
-            exception.printStackTrace();
-        }
-    }
     @Override
     public Connection getConnection() throws ClassNotFoundException, SQLException {
-        Class.forName(DB_DRIVER);
-        Connection connection = dataSource.getConnection();
-        connection.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
-        return connection;
+        try {
+            return DriverManager.getConnection (
+                    PropertiesUtil.get(DB_URL),
+                    PropertiesUtil.get(DB_USERNAME),
+                    PropertiesUtil.get(DB_PASSWORD)
+            );
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

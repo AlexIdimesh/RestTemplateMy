@@ -2,15 +2,21 @@ package org.example.model;
 
 public class ParticipantsEntity {
 
-    private int id;
+    private Long id;
 
     private String name;
 
     private int number;
 
-    public ParticipantsEntity(String name, int number) {
-        this.name = name;
-        this.number = number;
+    public ParticipantsEntity() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {

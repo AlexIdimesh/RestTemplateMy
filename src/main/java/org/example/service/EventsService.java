@@ -1,16 +1,18 @@
 package org.example.service;
 
 import org.example.model.EventsEntity;
+import org.example.servlet.dto.EventDTO;
 
-import java.util.UUID;
+import java.sql.SQLException;
+import java.util.List;
 
 public interface EventsService {
     EventsEntity save(EventsEntity eventsEntity);
 
-    EventsEntity findById(UUID uuid);
+    EventsEntity findById(Long id);
 
-    EventsEntity findAll();
+    List<EventsEntity> findAll() throws SQLException, ClassNotFoundException;
 
-    boolean deleteById(UUID uuid);
+    boolean deleteById(Long id);
 
 }

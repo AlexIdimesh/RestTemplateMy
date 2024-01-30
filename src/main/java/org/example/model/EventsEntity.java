@@ -1,22 +1,24 @@
 package org.example.model;
 
-public class EventsEntity {
-    private int id;
+import jakarta.servlet.http.HttpServlet;
+import org.example.servlet.dto.EventDTO;
+
+public class EventsEntity extends EventDTO {
+    private Long id;
 
     private String name;
 
     private String city;
 
-    public EventsEntity(String name, String city) {
-        this.name = name;
-        this.city = city;
-    }
-
     public EventsEntity() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -33,5 +35,14 @@ public class EventsEntity {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "EventsEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", city='" + city + '\'' +
+                '}';
     }
 }
