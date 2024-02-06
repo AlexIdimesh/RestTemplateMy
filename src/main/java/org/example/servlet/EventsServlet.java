@@ -5,15 +5,19 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.example.model.EventsEntity;
-import org.example.service.EventsService;
+import org.example.service.serverImpl.EventsService;
 import org.example.service.impl.EventsServiceImpl;
+import org.example.servlet.dto.CombinedEntityDTO;
 import org.example.servlet.dto.EventDTO;
-import org.example.servlet.mapper.EventsMapperMapstruct;
-import org.example.util.JsonConvector;
-import org.example.util.JsonConvectorImpl;
-import org.mapstruct.Mapper;
+import org.example.servlet.dto.EventsTagDTO;
+import org.example.util.json.jsonCombined.JsonConvectorCombined;
+import org.example.util.json.jsonCombined.JsonConvectorCombinedImpl;
+import org.example.util.json.jsonEvent.JsonConvector;
+import org.example.util.json.jsonEvent.JsonConvectorImpl;
+import org.example.util.json.jsonEventsTag.JsonConvectorTag;
+import org.example.util.json.jsonEventsTag.JsonConvectorTagImpl;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
@@ -21,56 +25,89 @@ import java.util.List;
 
 @WebServlet(name = "EventsServlet", value = "/events")
 public class EventsServlet extends HttpServlet {
-    private EventsServiceImpl service;
-    private EventsMapperMapstruct dtomapper;
-
-    private JsonConvectorImpl jsonMapper;
-
-
-    public EventsServlet() {
-    }
-
-    public EventsServlet(EventsServiceImpl service, EventsMapperMapstruct dtomapper, JsonConvectorImpl jsonMapper) {
-        this.service = service;
-        this.dtomapper = dtomapper;
-        this.jsonMapper = jsonMapper;
-    }
+    private final EventsService service = new EventsServiceImpl();
+    private final JsonConvector jsonMapper = new JsonConvectorImpl();
+    private final JsonConvectorCombined jsonMapperComb = new JsonConvectorCombinedImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        Long eventId = Long.parseLong(req.getParameter("eventId"));
-        EventDTO eventDTO = service.findById(eventId) ;
-        String json = jsonMapper.toJson(eventDTO) ;
         resp.setContentType("application/json");
-        try (PrintWriter printWriter = resp.getWriter()) {
-            printWriter.println(json);
+        String eventId = req.getParameter("id");
+        String eventsTagId = req.getParameter("tagId");
+        if (eventsTagId != null) {
+            List<CombinedEntityDTO> eventsTagDTO = service.findEventTagsByEventId(Long.parseLong(eventsTagId));
+            String json = jsonMapperComb.toJson(eventsTagDTO);
+            try (PrintWriter printWriter = resp.getWriter()) {
+                printWriter.println(json);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if (eventId != null) {
+            EventDTO eventDTO = service.findById(Long.parseLong(eventId));
+            String json = jsonMapper.toJson(eventDTO);
+            try (PrintWriter printWriter = resp.getWriter()) {
+                printWriter.println(json);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            List<EventDTO> eventDTOs;
+            try {
+                eventDTOs = service.findAll();
+            } catch (SQLException | ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+            String json = jsonMapper.toJson(eventDTOs);
+            try (PrintWriter printWriter = resp.getWriter()) {
+                printWriter.println(json);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
-}
-
-    @Override
+        @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String eventCity = req.getParameter("eventCity");
-        String eventName = req.getParameter("eventName");
-
-        EventDTO eventDTO = new EventDTO();
-        eventDTO.setName(eventName);
-        eventDTO.setCity(eventCity);
-
-        EventsEntity eventsEntity = dtomapper.eventDTOToEvent(eventDTO);
-
-        service.save(eventsEntity);
-
         resp.setContentType("text/plain");
         resp.setCharacterEncoding("UTF-8");
         resp.getWriter().write("Event saved successfully");
-
+        StringBuilder requestBody = new StringBuilder();
+        BufferedReader reader = req.getReader();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            requestBody.append(line);
+        }
+        String requestBodyString = requestBody.toString();
+        EventDTO eventDTO = jsonMapper.toDTO(requestBodyString);
+        service.save(eventDTO);
+    }
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        String eventIdParam = req.getParameter("id");
+        boolean deleteResult = service.deleteById(Long.valueOf(eventIdParam));
+        if (deleteResult) {
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.getWriter().write("Event with ID " + true + " has been successfully deleted");
+        } else {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.getWriter().write("Failed to delete event with ID " + false);
+        }
+    }
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        resp.setContentType("text/plain");
+        resp.setCharacterEncoding("UTF-8");
+        resp.getWriter().write("Event saved successfully");
+        StringBuilder requestBody = new StringBuilder();
+        BufferedReader reader = req.getReader();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            requestBody.append(line);
+        }
+        String requestBodyString = requestBody.toString();
+        EventDTO eventDTO = jsonMapper.toDTO(requestBodyString);
+        service.upDated(eventDTO);
     }
 }
-//    private String convertObjectToJson(Object dto) {
-//        try {
-//            return new ObjectMapper().writeValueAsString(dto);
-//        } catch (JsonProcessingException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-//}
+
+

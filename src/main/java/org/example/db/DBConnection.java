@@ -1,30 +1,41 @@
 package org.example.db;
 
-import com.zaxxer.hikari.HikariDataSource;
 import org.example.util.PropertiesUtil;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-public class DBConnection implements ConnectionManager {
-    public DBConnection() {
+public final class DBConnection implements ConnectionManager {
+    private String DB_USERNAME = "db.username";
+    private String DB_PASSWORD = "db.password";
+    private String DB_URL = "db.url";
+    private Properties properties;
+    private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
+
+    static {
+        try {
+            Class.forName(DB_DRIVER);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    private static final String DB_USERNAME = "db.username";
-    private static final String DB_PASSWORD = "db.password";
-    private static final String DB_URL = "db.url";
+    public DBConnection() {
+        this.properties = PropertiesUtil.get();
+    }
 
+    public DBConnection(Properties properties) {
+        this.properties = properties;
+
+    }
     @Override
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         try {
             return DriverManager.getConnection (
-                    PropertiesUtil.get(DB_URL),
-                    PropertiesUtil.get(DB_USERNAME),
-                    PropertiesUtil.get(DB_PASSWORD)
+                    properties.getProperty(DB_URL),
+                    properties.getProperty(DB_USERNAME),
+                    properties.getProperty(DB_PASSWORD)
             );
         } catch (SQLException e) {
             throw new RuntimeException(e);

@@ -1,9 +1,8 @@
 package org.example.model;
 
-import jakarta.servlet.http.HttpServlet;
-import org.example.servlet.dto.EventDTO;
+import java.util.List;
 
-public class EventsEntity extends EventDTO {
+public class EventsEntity {
     private Long id;
 
     private String name;

@@ -6,11 +6,11 @@ public class ParticipantsEntity {
 
     private String name;
 
-    private int number;
+    private String number;
 
     public ParticipantsEntity() {
-    }
 
+    }
     public Long getId() {
         return id;
     }
@@ -27,11 +27,22 @@ public class ParticipantsEntity {
         this.name = name;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
+
+    @Override
+    public String toString() {
+        return "ParticipantsEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", number=" + number +
+                '}';
+    }
 }
+
+

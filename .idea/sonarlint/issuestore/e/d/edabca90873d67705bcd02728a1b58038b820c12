@@ -1,0 +1,17 @@
+
+g	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8æñúò×1
+g	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çñúò×1
+g	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çñúò×1
+g	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çñúò×1
+K
+java:S1948")Make "service" transient or serializable.(ß±³Óûÿÿÿÿ8óñúò×1
+H
+java:S1948",Make "jsonMapper" transient or serializable.(¨µ¯`8óñúò×1
+R
+java:S1948"0Make "jsonMapperComb" transient or serializable.(¸Ş ÿÿÿÿÿ8óñúò×1
+c
+java:S1128"ARemove this unused import 'org.example.servlet.dto.EventsTagDTO'.(Ä©šôşÿÿÿÿ8üñúò×1
+s
+java:S1128"QRemove this unused import 'org.example.util.json.jsonEventsTag.JsonConvectorTag'.(æ¨™üÿÿÿÿ8üñúò×1
+w
+java:S1128"URemove this unused import 'org.example.util.json.jsonEventsTag.JsonConvectorTagImpl'.(¨Æë ıÿÿÿÿ8üñúò×1
