@@ -1,6 +1,0 @@
-
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8°ìçï×1
-`
-java:S1128">Remove this unused import 'org.example.model.EventsTagEntity'.(Ö–¥×ûÿÿÿÿ8à…©ð×1
-p
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¨êÅ]8à…©ð×1
