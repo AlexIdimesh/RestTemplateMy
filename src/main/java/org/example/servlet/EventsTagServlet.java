@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.example.service.impl.EventsTagServiceImpl;
 import org.example.service.serverImpl.EventsTagService;
+import org.example.servlet.dto.EventDTO;
 import org.example.servlet.dto.EventsTagDTO;
 import org.example.util.json.jsonEventsTag.JsonConvectorTag;
 import org.example.util.json.jsonEventsTag.JsonConvectorTagImpl;
@@ -62,7 +63,14 @@ public class EventsTagServlet extends HttpServlet {
         }
         String requestBodyString = requestBody.toString();
         EventsTagDTO eventsTagDTO = jsonMapper.toDTO(requestBodyString);
-        service.save(eventsTagDTO);
+        EventsTagDTO saveDto = service.save(eventsTagDTO);
+        if (saveDto != null) {
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.getWriter().write("Event save successfully");
+        } else {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.getWriter().write("Failed to save event");
+        }
     }
 
     @Override
@@ -91,6 +99,13 @@ public class EventsTagServlet extends HttpServlet {
         }
         String requestBodyString = requestBody.toString();
         EventsTagDTO eventsTagDTO = jsonMapper.toDTO(requestBodyString);
-        service.upDated(eventsTagDTO);
+        EventsTagDTO updatedEvent = service.upDated(eventsTagDTO);
+        if (updatedEvent != null) {
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.getWriter().write("Event updated successfully");
+        } else {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+                resp.getWriter().write("Failed to update event");
+        }
     }
 }

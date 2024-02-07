@@ -18,9 +18,9 @@ import java.util.List;
 @WebServlet(name = "ParticipantsEntity", value = "/participants")
 public class ParticipantsServlet extends HttpServlet {
 
-   private final ParticipantsService service = new ParticipantsServiceImpl();
+    private final ParticipantsService service = new ParticipantsServiceImpl();
 
-   private final JsonConvectorsPar jsonMapper = new JsonConvectorsParImpl();
+    private final JsonConvectorsPar jsonMapper = new JsonConvectorsParImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
@@ -36,9 +36,9 @@ public class ParticipantsServlet extends HttpServlet {
                 throw new RuntimeException(e);
             }
         }
-         if (participantsIdEvent != null) {
-                List<ParticipantsDTO> participantsDTO = service.findByIdEvents(Long.parseLong(participantsIdEvent));
-                String json = jsonMapper.toJson(participantsDTO);
+        if (participantsIdEvent != null) {
+            List<ParticipantsDTO> participantsDTO = service.findByIdEvents(Long.parseLong(participantsIdEvent));
+            String json = jsonMapper.toJson(participantsDTO);
             try (PrintWriter printWriter = resp.getWriter()) {
                 printWriter.println(json);
             } catch (IOException e) {
@@ -59,6 +59,7 @@ public class ParticipantsServlet extends HttpServlet {
             }
         }
     }
+
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/plain");
         resp.setCharacterEncoding("UTF-8");
@@ -71,8 +72,16 @@ public class ParticipantsServlet extends HttpServlet {
         }
         String requestBodyString = requestBody.toString();
         ParticipantsDTO participantsDTO = jsonMapper.toDTO(requestBodyString);
-        service.save(participantsDTO);
+        ParticipantsDTO saveDto = service.save(participantsDTO);
+        if (saveDto != null) {
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.getWriter().write("Event save successfully");
+        } else {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.getWriter().write("Failed to save event");
+        }
     }
+
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String participantId = req.getParameter("parId");
@@ -85,6 +94,7 @@ public class ParticipantsServlet extends HttpServlet {
             resp.getWriter().write("Failed to delete event with ID " + participantId);
         }
     }
+
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/plain");
@@ -98,6 +108,13 @@ public class ParticipantsServlet extends HttpServlet {
         }
         String requestBodyString = requestBody.toString();
         ParticipantsDTO participantsDTO = jsonMapper.toDTO(requestBodyString);
-        service.upDated(participantsDTO);
+        ParticipantsDTO update = service.upDated(participantsDTO);
+        if (update != null) {
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.getWriter().write("Event updated successfully");
+        } else {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.getWriter().write("Failed to update event");
+        }
     }
 }

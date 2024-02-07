@@ -66,8 +66,9 @@ public class EventsServlet extends HttpServlet {
             }
         }
     }
-        @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/plain");
         resp.setCharacterEncoding("UTF-8");
         resp.getWriter().write("Event saved successfully");
@@ -79,20 +80,28 @@ public class EventsServlet extends HttpServlet {
         }
         String requestBodyString = requestBody.toString();
         EventDTO eventDTO = jsonMapper.toDTO(requestBodyString);
-        service.save(eventDTO);
-    }
-    @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String eventIdParam = req.getParameter("id");
-        boolean deleteResult = service.deleteById(Long.valueOf(eventIdParam));
-        if (deleteResult) {
+        EventDTO saveDto = service.save(eventDTO);
+        if (saveDto != null) {
             resp.setStatus(HttpServletResponse.SC_OK);
-            resp.getWriter().write("Event with ID " + true + " has been successfully deleted");
+            resp.getWriter().write("Event save successfully");
         } else {
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            resp.getWriter().write("Failed to delete event with ID " + false);
+            resp.getWriter().write("Failed to save event");
         }
     }
+        @Override
+        protected void doDelete (HttpServletRequest req, HttpServletResponse resp) throws IOException {
+            String eventIdParam = req.getParameter("id");
+            boolean deleteResult = service.deleteById(Long.valueOf(eventIdParam));
+            if (deleteResult) {
+                resp.setStatus(HttpServletResponse.SC_OK);
+                resp.getWriter().write("Event with ID " + true + " has been successfully deleted");
+            } else {
+                resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+                resp.getWriter().write("Failed to delete event with ID " + false);
+            }
+        }
+
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/plain");
@@ -106,7 +115,14 @@ public class EventsServlet extends HttpServlet {
         }
         String requestBodyString = requestBody.toString();
         EventDTO eventDTO = jsonMapper.toDTO(requestBodyString);
-        service.upDated(eventDTO);
+        EventDTO updatedEvent = service.upDated(eventDTO);
+        if (updatedEvent != null) {
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.getWriter().write("Event updated successfully");
+        } else {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.getWriter().write("Failed to update event");
+        }
     }
 }
 
