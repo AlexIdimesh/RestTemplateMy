@@ -1,0 +1,10 @@
+
+g	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8”¶Ÿûà1
+t
+java:S1192("RUse already-defined constant 'CONTENT_JSON' instead of duplicating its value here.(›ı’Àøÿÿÿÿ8•¶Ÿûà1
+K
+java:S1948")Make "service" transient or serializable.(€Ì´¥üÿÿÿÿ8¢¶Ÿûà1
+N
+java:S1948",Make "jsonMapper" transient or serializable.(´±Ê»üÿÿÿÿ8¢¶Ÿûà1
+R
+java:S1948"0Make "jsonMapperComb" transient or serializable.(ÊĞ“¤øÿÿÿÿ8¢¶Ÿûà1

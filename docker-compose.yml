@@ -1,0 +1,18 @@
+version: '4.24.0'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: my-mysql
+    restart: unless-stopped
+    ports:
+      - "3307:3307"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: eventsHappy
+      MYSQL_USER: sasha
+      MYSQL_PASSWORD: 1234
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+

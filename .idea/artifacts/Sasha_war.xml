@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" external-system-id="Maven" name="Sasha:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Sasha</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Sasha-1.0.war">
+      <element id="artifact" artifact-name="Sasha:war exploded" />
+    </root>
+  </artifact>
+</component>

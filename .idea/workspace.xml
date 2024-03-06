@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Sasha:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c67b8e3-4697-404d-a742-616f894d9da4" name="Changes" comment="Rest Api JDBC Servlet CRUD method + ref">
+      <change beforePath="$PROJECT_DIR$/Sasha.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sasha.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/db/ConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/db/DBConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/CombinedEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/CombinedEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/EventsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/EventsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/impl/ParticipantsEntityRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/rep/EntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/rep/EntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/rep/EventsTagEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/rep/EventsTagEntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/rep/ParticipantsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/rep/ParticipantsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/EventsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/EventsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/EventsTagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/EventsTagServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/ParticipantsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/ParticipantsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/EventsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/EventsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/EventsTagServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/EventsTagServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/ParticipantsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/ParticipantsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/dto/CombinedEntityDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/dto/CombinedEntityDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/db/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/repository/impl/EventsEntityRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/impl/EventsEntityRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/repository/mapper/EventsResultSetMapperImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/mapper/EventsResultSetMapperImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/service/impl/EventsServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/service/impl/EventsServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/servlet/EventsServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/servlet/EventsServletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/servlet/mapper/EventsDtomapperImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/model/CombinedEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/model/CombinedEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/model/EventsEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/model/EventsEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/repository/mapper/events/EventsResultSetMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/repository/mapper/events/EventsResultSetMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/service/impl/EventsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/service/impl/EventsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/EventsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/EventsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/EventsTagServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/EventsTagServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/ParticipantsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/ParticipantsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/dto/CombinedEntityDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sasha-1.0/WEB-INF/classes/org/example/servlet/dto/CombinedEntityDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/CombinedEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/CombinedEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/EventsEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/EventsEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/impl/EventsEntityRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/impl/EventsEntityRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/impl/EventsTagEntityRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/impl/EventsTagEntityRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/mapper/events/EventsResultSetMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/mapper/events/EventsResultSetMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/rep/EntityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/rep/EntityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/rep/EventsTagEntityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/rep/EventsTagEntityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/rep/ParticipantsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/repository/rep/ParticipantsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/impl/EventsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/impl/EventsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/impl/EventsTagServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/impl/EventsTagServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/impl/ParticipantsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/impl/ParticipantsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/servlet/EventsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/servlet/EventsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/servlet/EventsTagServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/servlet/EventsTagServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/servlet/ParticipantsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/servlet/ParticipantsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/servlet/dto/CombinedEntityDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/servlet/dto/CombinedEntityDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/db/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/repository/impl/EventsEntityRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/repository/impl/EventsEntityRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/repository/mapper/EventsResultSetMapperImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/repository/mapper/EventsResultSetMapperImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/service/impl/EventsServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/service/impl/EventsServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/servlet/EventsServletTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/servlet/EventsServletTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/servlet/mapper/EventsDtomapperImplTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="a862f83fd8aaf6e1362deb2a3e99ea0964a3ead3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlexIdimesh&quot;
+  }
+}</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="a862f83fd8aaf6e1362deb2a3e99ea0964a3ead3" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7345685f-2bac-448e-bcb2-231c94571b0a" />
+        <option name="url" value="https://github.com/AlexIdimesh/RestTemplateMy.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bRNvUH0p2Tfo9bz4w9SsbpjBEb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sasha/IdeaProjects/RestTemplate&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mysql&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;MySQL&quot;,
+      &quot;PostgreSQL&quot;,
+      &quot;H2&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/servlet" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example.servlet" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.repository.mapper" />
+      <recent name="org.example.servlet.mapper" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.servlet.mapper" />
+      <recent name="org.example.repository.mapper.partipants" />
+      <recent name="org.example.repository.mapper.eventstags" />
+      <recent name="org.example.repository.impl" />
+      <recent name="org.example.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EventsServletTest.doGetWhenParameterPresentAndValidThenReturnCombinedDto">
+    <configuration name="EventsServletTest.doGetWhenParameterAbsentThenReturnListCombinedEntityDTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sasha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.servlet" />
+      <option name="MAIN_CLASS_NAME" value="org.example.servlet.EventsServletTest" />
+      <option name="METHOD_NAME" value="doGetWhenParameterAbsentThenReturnListCombinedEntityDTO" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventsServletTest.doGetWhenParameterPresentAndValidThenReturnCombinedDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sasha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.servlet" />
+      <option name="MAIN_CLASS_NAME" value="org.example.servlet.EventsServletTest" />
+      <option name="METHOD_NAME" value="doGetWhenParameterPresentAndValidThenReturnCombinedDto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServletUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sasha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.servlet" />
+      <option name="MAIN_CLASS_NAME" value="org.example.servlet.ServletUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="example in Sasha" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sasha" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/org/example" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in Sasha" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sasha" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 10.1.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="azul-15" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Sasha:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="b532b71f-9ef8-48cd-8477-cf883a42d462" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50289" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Sasha:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Write tests for method EventsTagServiceImpl.save" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="Sasha" />
+      <settings run-config-name="Write tests for method EventsTagServiceImpl.save" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="org.example.service.impl.EventsTagServiceImpl.save:(Lorg/example/servlet/dto/EventsTagDTO;)Lorg/example/servlet/dto/EventsTagDTO;" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Diffblue Cover.Write tests for method EventsTagServiceImpl.save" />
+      <item itemvalue="JUnit.EventsServletTest.doGetWhenParameterAbsentThenReturnListCombinedEntityDTO" />
+      <item itemvalue="JUnit.EventsServletTest.doGetWhenParameterPresentAndValidThenReturnCombinedDto" />
+      <item itemvalue="JUnit.ServletUtilTest" />
+      <item itemvalue="JUnit.java in Sasha" />
+      <item itemvalue="JUnit.example in Sasha" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.18" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EventsServletTest.doGetWhenParameterPresentAndValidThenReturnCombinedDto" />
+        <item itemvalue="JUnit.EventsServletTest.doGetWhenParameterAbsentThenReturnListCombinedEntityDTO" />
+        <item itemvalue="JUnit.example in Sasha" />
+        <item itemvalue="JUnit.ServletUtilTest" />
+        <item itemvalue="JUnit.java in Sasha" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c67b8e3-4697-404d-a742-616f894d9da4" name="Changes" comment="" />
+      <created>1706174163353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706174163353</updated>
+      <workItem from="1706363970452" duration="6364000" />
+      <workItem from="1706371720068" duration="4132000" />
+      <workItem from="1706378436330" duration="652000" />
+      <workItem from="1706516584056" duration="334000" />
+      <workItem from="1706517035011" duration="5340000" />
+      <workItem from="1706522394475" duration="13881000" />
+      <workItem from="1706538960526" duration="1026000" />
+      <workItem from="1706551112722" duration="1643000" />
+      <workItem from="1706553422938" duration="8000" />
+      <workItem from="1706608261739" duration="10014000" />
+      <workItem from="1706618313091" duration="7762000" />
+      <workItem from="1706626333488" duration="2697000" />
+      <workItem from="1706629088080" duration="1542000" />
+      <workItem from="1706632570862" duration="253000" />
+      <workItem from="1706634595812" duration="194000" />
+      <workItem from="1706684322840" duration="7565000" />
+      <workItem from="1706694227177" duration="2117000" />
+      <workItem from="1706700970795" duration="179000" />
+      <workItem from="1706776910269" duration="17691000" />
+      <workItem from="1706795768532" duration="2566000" />
+      <workItem from="1706806110613" duration="4447000" />
+      <workItem from="1706814101782" duration="313000" />
+      <workItem from="1706814529287" duration="299000" />
+      <workItem from="1706869582381" duration="1104000" />
+      <workItem from="1706873921652" duration="5122000" />
+      <workItem from="1706879370246" duration="315000" />
+      <workItem from="1706879922461" duration="278000" />
+      <workItem from="1706954403522" duration="2731000" />
+      <workItem from="1706957146454" duration="7280000" />
+      <workItem from="1706964454204" duration="4927000" />
+      <workItem from="1706969402065" duration="3597000" />
+      <workItem from="1706978237360" duration="4431000" />
+      <workItem from="1706982807627" duration="9367000" />
+      <workItem from="1706992538834" duration="1665000" />
+      <workItem from="1706995226919" duration="590000" />
+      <workItem from="1707122159786" duration="18602000" />
+      <workItem from="1707201177557" duration="7312000" />
+      <workItem from="1707209774095" duration="9371000" />
+      <workItem from="1707219431040" duration="10597000" />
+      <workItem from="1707230069494" duration="1845000" />
+      <workItem from="1707232142470" duration="129000" />
+      <workItem from="1707233877553" duration="985000" />
+      <workItem from="1707240105886" duration="1179000" />
+      <workItem from="1707290001041" duration="5679000" />
+      <workItem from="1707309117690" duration="871000" />
+      <workItem from="1707380514099" duration="4289000" />
+      <workItem from="1708441604097" duration="1491000" />
+      <workItem from="1708443103426" duration="39000" />
+      <workItem from="1708443148407" duration="77000" />
+      <workItem from="1708443240851" duration="380000" />
+      <workItem from="1708443625396" duration="531000" />
+      <workItem from="1708444162106" duration="4476000" />
+      <workItem from="1708448654380" duration="21000" />
+      <workItem from="1708448678897" duration="125000" />
+      <workItem from="1708449172994" duration="41000" />
+      <workItem from="1708449339002" duration="37000" />
+      <workItem from="1708449405888" duration="102000" />
+      <workItem from="1708449516200" duration="78000" />
+      <workItem from="1708455861927" duration="140000" />
+      <workItem from="1708527404661" duration="19000" />
+      <workItem from="1708528495321" duration="16000" />
+      <workItem from="1708528770407" duration="969000" />
+      <workItem from="1708592399181" duration="13000" />
+      <workItem from="1708852076835" duration="1000" />
+      <workItem from="1708852589906" duration="445000" />
+      <workItem from="1708856179521" duration="2399000" />
+      <workItem from="1708863160036" duration="631000" />
+      <workItem from="1709009948741" duration="694000" />
+      <workItem from="1709010651230" duration="324000" />
+      <workItem from="1709010982997" duration="507000" />
+      <workItem from="1709044632322" duration="5895000" />
+      <workItem from="1709050555106" duration="2464000" />
+      <workItem from="1709118727657" duration="13000" />
+      <workItem from="1709137568134" duration="941000" />
+      <workItem from="1709138832742" duration="751000" />
+      <workItem from="1709144759330" duration="162000" />
+      <workItem from="1709182243233" duration="460000" />
+      <workItem from="1709183584680" duration="322000" />
+      <workItem from="1709194196456" duration="1255000" />
+      <workItem from="1709208022404" duration="2177000" />
+      <workItem from="1709289022526" duration="12474000" />
+      <workItem from="1709310951061" duration="1249000" />
+      <workItem from="1709312244945" duration="101000" />
+      <workItem from="1709468833091" duration="2679000" />
+      <workItem from="1709471521780" duration="6886000" />
+      <workItem from="1709482638309" duration="2263000" />
+      <workItem from="1709616224721" duration="3645000" />
+      <workItem from="1709621367295" duration="463000" />
+      <workItem from="1709628444037" duration="903000" />
+      <workItem from="1709632514897" duration="7000" />
+      <workItem from="1709652542160" duration="3496000" />
+      <workItem from="1709704842849" duration="3055000" />
+    </task>
+    <task id="LOCAL-00001" summary="f*ck jdbc )">
+      <option name="closed" value="true" />
+      <created>1706625996272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706625996272</updated>
+    </task>
+    <task id="LOCAL-00002" summary="f*ck jdbc ) N2">
+      <option name="closed" value="true" />
+      <created>1706628572229</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706628572229</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Rest Api JDBC Servlet CRUD method">
+      <option name="closed" value="true" />
+      <created>1707234239712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707234239712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rest Api JDBC Servlet CRUD method + ref">
+      <option name="closed" value="true" />
+      <created>1707292872634</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707292872634</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rest Api JDBC Servlet CRUD method + ref">
+      <option name="closed" value="true" />
+      <created>1707293301879</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707293301879</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rest Api JDBC Servlet CRUD method + ref">
+      <option name="closed" value="true" />
+      <created>1707293691544</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707293691544</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="99f5497d-debc-4b90-a5b2-212f089ac898" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="99f5497d-debc-4b90-a5b2-212f089ac898">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="f*ck jdbc )" />
+    <MESSAGE value="f*ck jdbc ) N2" />
+    <MESSAGE value="Rest Api JDBC Servlet CRUD method" />
+    <MESSAGE value="Rest Api JDBC Servlet CRUD method + ref" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rest Api JDBC Servlet CRUD method + ref" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RestTemplate$Tomcat_10_1_18.ic" NAME="Tomcat 10.1.18 Coverage Results" MODIFIED="1709195440326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/RestTemplate$mapper_in_Sasha.ic" NAME="mapper in Sasha Coverage Results" MODIFIED="1709480126288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/RestTemplate$EventsServletTest.ic" NAME="EventsServletTest Coverage Results" MODIFIED="1709655585268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.servlet.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestTemplate$java_in_Sasha.ic" NAME="java in Sasha Coverage Results" MODIFIED="1709706954920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/RestTemplate$EventsServiceImplTest_findAll.ic" NAME="EventsServiceImplTest.findAll Coverage Results" MODIFIED="1709209826310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestTemplate$EventsTagServiceImplTest.ic" NAME="EventsTagServiceImplTest Coverage Results" MODIFIED="1709303627059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestTemplate$impl_in_Sasha.ic" NAME="impl in Sasha Coverage Results" MODIFIED="1709474873009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/RestTemplate$ParticipantsServiceImplTest.ic" NAME="ParticipantsServiceImplTest Coverage Results" MODIFIED="1709303560879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestTemplate$example_in_Sasha.ic" NAME="example in Sasha Coverage Results" MODIFIED="1709707163940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+
+`	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+?
+java:S1948")Make "service" transient or serializable.(‡‘üŒ
+B
+java:S1948",Make "jsonMapper" transient or serializable.(ğ´¦ö
+S
+java:S1128"=Remove this unused import 'jakarta.servlet.ServletException'.(®Â­Ç
+X
+java:S1128
+"=Remove this unused import 'org.example.servlet.dto.EventDTO'.(˜‡¸æùÿÿÿÿ

@@ -1,0 +1,779 @@
+Index: .idea/sonarlint/issuestore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nc\n3src/main/java/org/example/db/ConnectionManager.java\u0012,3/9/399b973cc236fe4ad17990fdef72f9d719158511\nS\n#src/main/java/org/example/Main.java\u0012,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b\n@\n\u0010RestTemplate.iml\u0012,7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323\n7\n\u0007pom.xml\u0012,4/4/442292b8a7efeabbe4cc176709b833b1792140ec\n^\n.src/main/java/org/example/db/DBConnection.java\u0012,0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f\na\n1src/main/java/org/example/model/EventsEntity.java\u0012,5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6\ng\n7src/main/java/org/example/model/ParticipantsEntity.java\u0012,3/0/30bc0e30a4a453658ec34bd531928ee89060af84\nm\n=src/main/java/org/example/service/impl/EventsServiceImpl.java\u0012,3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd\nd\n4src/main/java/org/example/servlet/EventsServlet.java\u0012,e/d/edabca90873d67705bcd02728a1b58038b820c12\nb\n2src/main/java/org/example/util/PropertiesUtil.java\u0012,d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab\n~\nNsrc/test/java/org/example/repository/mapper/EventsResultSetMapperImplTest.java\u0012,7/c/7c062b90b914879b596bcbb20bd113148319b060\nV\n&src/test/java/org/example/db/test.java\u0012,8/1/812fb7cf79004347eebd869a7321adcee02f6930\nq\nAsrc/test/java/org/example/service/impl/EventsServiceImplTest.java\u0012,0/6/06952d5a9b61287ca9696b812fd019e11d62a608\nh\n8src/test/java/org/example/servlet/EventsServletTest.java\u0012,8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59\nu\nEsrc/test/java/org/example/servlet/mapper/EventsDtomapperImplTest.java\u0012,1/6/164183f98badbc2937d32e02be69f86aeb7cd047\nC\n\u0013web/WEB-INF/web.xml\u0012,c/d/cdcc12da5c4054f6995aab32914d7e0243194c05\nc\n3src/main/java/org/example/servlet/dto/EventDTO.java\u0012,7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b\ns\nCsrc/main/java/org/example/servlet/mapper/EventsMapperMapstruct.java\u0012,d/a/da7dc781cba927bcc7bdd481b7a7d16247342515\n�\u0001\nWsrc/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapper.java\u0012,7/c/7ca6f44ec667825e9345613479b56e0b27000da9\n�\u0001\n[src/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapperImpl.java\u0012,d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de\n�\u0001\nQsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java\u0012,c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2\n}\nMsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapper.java\u0012,8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885\no\n?src/main/java/org/example/service/serverImpl/EventsService.java\u0012,1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3\nu\nEsrc/main/java/org/example/service/serverImpl/ParticipantsService.java\u0012,2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb\ns\nCsrc/main/java/org/example/service/impl/ParticipantsServiceImpl.java\u0012,f/8/f8a0149525805356fadbe0bcca462acdbd078788\nj\n:src/main/java/org/example/servlet/dto/ParticipantsDTO.java\u0012,b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8\ny\nIsrc/main/java/org/example/servlet/mapper/ParticipantsMapperMapstruct.java\u0012,d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a\nj\n:src/main/java/org/example/servlet/ParticipantsServlet.java\u0012,0/7/072924ba0dea3de2d1b55cd8db523239e915d983\n~\nNsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsParImpl.java\u0012,1/7/1783fa9e166fe671310f285534b8159f8ab20ae4\nz\nJsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsPar.java\u0012,a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72\n~\nNsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsParImpl.java\u0012,6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3\nz\nJsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsPar.java\u0012,8/7/87b796270e3c169fda43db8ca6209eaafedf8925\np\n@src/main/java/org/example/util/json/jsonEvent/JsonConvector.java\u0012,2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1\nt\nDsrc/main/java/org/example/util/json/jsonEvent/JsonConvectorImpl.java\u0012,2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9\nd\n4src/main/java/org/example/model/EventsTagEntity.java\u0012,7/2/72001fc636679039a41b4c01b5693e17e4ca69bb\n�\u0001\nXsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapperImpl.java\u0012,1/6/16b750e7a55158e93d78483b52a6f1b38d85d240\n�\u0001\nTsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapper.java\u0012,e/e/eeef550778afd8938b3f64b7689badc3168f8cd5\nr\nBsrc/main/java/org/example/service/serverImpl/EventsTagService.java\u0012,e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c\ng\n7src/main/java/org/example/servlet/dto/EventsTagDTO.java\u0012,b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66\nv\nFsrc/main/java/org/example/servlet/mapper/EventsTagMapperMapstruct.java\u0012,d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462\np\n@src/main/java/org/example/service/impl/EventsTagServiceImpl.java\u0012,1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003\ng\n7src/main/java/org/example/servlet/EventsTagServlet.java\u0012,8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2\nw\nGsrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTag.java\u0012,6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d\n{\nKsrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTagImpl.java\u0012,2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a\nn\n>src/main/java/org/example/repository/rep/EntityRepository.java\u0012,8/a/8a11b74aa9452b8c78e05af67f663542d968ab78\nt\nDsrc/main/java/org/example/repository/rep/ParticipantsRepository.java\u0012,d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52\n~\nNsrc/main/java/org/example/repository/rep/ext/EventsTagEntityRepositoryExt.java\u0012,7/9/798a832e50c6772184676cda81726f12efccda00\n{\nKsrc/main/java/org/example/repository/rep/ext/EntityEntityRepositoryExt.java\u0012,a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8\n�\u0001\nUsrc/main/java/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.java\u0012,f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d\n�\u0001\nWsrc/main/java/org/example/repository/rep/ext/ParticipantsEntityEntityRepositoryExt.java\u0012,4/7/4713d65eb44c556dc57d25f8ff102c0342407d96\n|\nLsrc/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java\u0012,4/b/4b0f33399d2ad76885e2133810100040aaaef442\nw\nGsrc/main/java/org/example/repository/rep/EventsTagEntityRepository.java\u0012,f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7\nc\n3src/main/java/org/example/model/CombinedEntity.java\u0012,8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84\nl\n<src/main/java/org/example/servlet/dto/CombinedEntityDTO.java\u0012,c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69\nu\nEsrc/main/java/org/example/servlet/mapper/CombinedEntityMapstruct.java\u0012,a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb\n{\nKsrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombined.java\u0012,2/9/2989ae34155d099b25203cf93bcfb4cef55daafc\n\u007F\nOsrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombinedImpl.java\u0012,b/7/b7f095576bcb16aeeca72052935ec009c71f1274\ny\nIsrc/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java\u0012,e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee\n}\nMsrc/test/java/org/example/repository/impl/EventsEntityRepositoryImplTest.java\u0012,b/b/bbf695e28c73becca961fa813ec710aa7d0933ad\nw\nG.idea/sonarlint/issuestore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05\u0012,1/3/138fedb141a074bd0ec70ae8211796c9f35c7ae4\n9\n\tSasha.iml\u0012,3/4/343b9d4cba038eece7454d71a4744327cd1461ba\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/c/7c062b90b914879b596bcbb20bd113148319b060\u0012,2/5/2515acfe0420221e2f43ccfad6302fa4768d585e\nw\nG.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec\u0012,8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b\u0012,a/b/abe25e851ee828e40a94fcb1c1be6f78ff7a04cf\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/b/bbf695e28c73becca961fa813ec710aa7d0933ad\u0012,9/d/9da57946bc10cdae188544a0ac2206ad77569895\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee\u0012,6/9/6972e890bae36137bfcab9994a009d733e663e4d\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d\u0012,5/9/59b2e2f586d71217755ef37c9d6e05b63dbf3ec6\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a\u0012,6/8/68dd76095b1531d113bdfea55d8e35afc2f2c9f7\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/1/812fb7cf79004347eebd869a7321adcee02f6930\u0012,a/d/adde181fcb0e9eb781478a71f7f79a9832d5f26e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2\u0012,e/b/eb37642e31b799cfe5ad003c5ca94727c4cc19d0\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52\u0012,a/a/aab12f8f8b41d9c737b350709576124d1cb8f629\nw\nG.idea/sonarlint/issuestore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003\u0012,e/0/e044802f1103303973f960a2025c2f0e3dbe094a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c\u0012,b/6/b6f4a6cffe20a659ec7b24f29b099f8f82674ba8\nw\nG.idea/sonarlint/issuestore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8\u0012,c/5/c50af96e1aeac5ad3b4be7868d2ebbcefbd82155\nw\nG.idea/sonarlint/issuestore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52\u0012,a/c/ac5ce0e4fc23769c92df8fb122b8caf95b94cfe5\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59\u0012,4/c/4c0ae7fd73d67da08de82308cd1f72186f0c1372\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/9/798a832e50c6772184676cda81726f12efccda00\u0012,6/c/6caec5420c6c802fcc3d0db97844a02ec86e757d\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462\u0012,f/4/f48318e5f6a35ad1117cb57308eb0b512aca467e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b\u0012,7/7/77eb6133e1a8411356a9d1a13e2cee307ee02a7e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8\u0012,f/5/f53d0a74609fc71f0b5411f6a75ddd13054516dc\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/a/8a11b74aa9452b8c78e05af67f663542d968ab78\u0012,0/f/0f47095afc2897a1bdbc5acaecf8368492fae5af\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66\u0012,0/d/0d56aeb53968ba8c4e25be46c515c21662a7f33e\nj\n:.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c.xml\u0012,5/b/5b4b328784f2d250a2a215fee1bf98193bddeb10\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/f/8/f8a0149525805356fadbe0bcca462acdbd078788\u0012,d/f/dfd8bb2a945d6db2c4a819be9dbfdb8b7e07c3db\n�\u0001\n^.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/sys.zb4BAA.meta\u0012,0/3/03cccb99bd2438b92229bc4f2f18b8399065e37b\nw\nG.idea/sonarlint/issuestore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323\u0012,8/e/8e034a738f67dda2c825cb82017d25d565d7ba88\nw\nG.idea/sonarlint/issuestore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462\u0012,a/1/a1eb3808326a72c5d37e2346778e8ee99a5f0fc8\n�\u0001\n`.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/mysql.osA4Bg.meta\u0012,a/4/a49c1c0acd7c8924d3dceeb9cf0f6a2f8c4f9fe4\n�\u0001\nm.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta\u0012,c/f/cfcfe638004fe38142399840dfa06b5820f65eeb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003\u0012,0/0/00c7657a15f5b1319fb8cc23d5c6d15c5372929b\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3\u0012,5/0/5066a26e4103b3fd8eb4f5e139ec1989fbbc7c0a\n�\u0001\nm.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta\u0012,3/5/359289bc23e8c3d267c86f82fc7a6bcd504b8edc\nw\nG.idea/sonarlint/issuestore/8/1/812fb7cf79004347eebd869a7321adcee02f6930\u0012,2/3/23a13f0034acf0d16938c46db40bb58c100d5288\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/6/164183f98badbc2937d32e02be69f86aeb7cd047\u0012,0/5/05395fdd55168d23114ddbd725cc7aa1cd33ef2f\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d\u0012,7/9/79670135c111808e7da3b0e65e29285a24a183fb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/4/7/4713d65eb44c556dc57d25f8ff102c0342407d96\u0012,b/c/bc3c4f9355837e511e42505e78ce155ec5055f5b\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9\u0012,e/3/e31dc911bf928ce92622da46c6f00df203bbaee2\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb\u0012,d/7/d7f6293de818cbc531450632a3c39a0580d2ce78\nw\nG.idea/sonarlint/issuestore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5\u0012,1/3/13c241ea6a3ec34cbcf398171b0a94a06c023162\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de\u0012,2/e/2e038f245fa67ad12770e366e18faaae199820fb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/3/0/30bc0e30a4a453658ec34bd531928ee89060af84\u0012,5/d/5d2783d825f7a87d67c619e6eef3442dbfc7f091\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9\u0012,5/a/5a5cc3bfd4629d2691a854b73dcb220a46e18b38\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885\u0012,d/9/d955eb9382235e4c1c187eec44a8067d7888bbbb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1\u0012,9/1/910c4ec5a4c53e713eedc07c0e524c9415635b2a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/2/72001fc636679039a41b4c01b5693e17e4ca69bb\u0012,b/2/b277dfd4e3a772ccd4e44f1d25da2e90e48564d3\n\\\n,.idea/inspectionProfiles/Project_Default.xml\u0012,4/9/496a238a6afa168dbaf6efd37bb459331589579c\nw\nG.idea/sonarlint/issuestore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a\u0012,e/1/e130c8283c618fcc2c1ed3721faf8f7a65a2930a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/7/072924ba0dea3de2d1b55cd8db523239e915d983\u0012,4/1/41ef0dcd99f344adf54f5b9fe78a528c428c1e86\n]\n-.idea/sonarlint/securityhotspotstore/index.pb\u0012,8/8/88a9255124c95bdc913197c120a8d560edc59c8e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8\u0012,e/8/e8dc50650f68a3ac5cefdea1f097d6b4c0985b68\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a\u0012,e/a/ea6d3a297026bd55adf99b643fcf530af570aaee\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/7/1783fa9e166fe671310f285534b8159f8ab20ae4\u0012,4/3/430d774008f7cceebd580ae1cb555ef52a9af375\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72\u0012,5/f/5f29141be4285c3bece6ed2d8e7b8189c0cc4625\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/3/9/399b973cc236fe4ad17990fdef72f9d719158511\u0012,d/a/da9aab7a117407688a6d7c8cb725561fdf03a976\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd\u0012,e/5/e5e7ccd3d286c9f0ae27f4ea0a9715e7e29bc61a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab\u0012,7/a/7a091de22e42e5598c1e5827e03ec6b755315248\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2\u0012,1/8/182790867d31a73111a11d612f6400aa898750e4\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925\u0012,8/f/8f64707679c1f65e612eecb69e9736e3844d1a3c\nw\nG.idea/sonarlint/issuestore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925\u0012,1/c/1c5c2484114d3cf07c2b37d0ee554f5a3208fa56\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3\u0012,9/8/98311829c662ff79848fb15eb5807df273eb2a65\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec\u0012,2/c/2cabb939da04d3de3a200bf2b575690e1a16316d\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/d/edabca90873d67705bcd02728a1b58038b820c12\u0012,9/5/956d6c8dba519d954c90b26fcc3355691fab23c7\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb\u0012,c/5/c56dcce4c466a34acfebf97f69f71ab5ee7d567f\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/a/da7dc781cba927bcc7bdd481b7a7d16247342515\u0012,e/9/e9ff6cccff9a7b0bcca723af8a0a89362109e379\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69\u0012,3/0/30fbd686bd332eb4a491eaea69d28f7b6aaa92a8\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/7/b7f095576bcb16aeeca72052935ec009c71f1274\u0012,4/c/4c04a47597151b8057bcb3b2676260931894adfd\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/6/16b750e7a55158e93d78483b52a6f1b38d85d240\u0012,3/b/3ba4f2bd00087af61b194db7884573789ee1f6e9\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/9/2989ae34155d099b25203cf93bcfb4cef55daafc\u0012,2/6/26b4105e17849b76d4a7d9e4e71d83afef625d43\nw\nG.idea/sonarlint/issuestore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69\u0012,d/8/d8c9147efbc372423248a94cd4e89b8bd15f8b6d\nw\nG.idea/sonarlint/issuestore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9\u0012,e/4/e427e0b4bb9306e0fd9dc04acba04f80d72d0b13\nw\nG.idea/sonarlint/issuestore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb\u0012,d/c/dc47386184b30b51dbc33c3a73d86d3e7c691d2c\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5\u0012,0/2/027e8cebe1735d2d8523e931d868cecd0304d038\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6\u0012,d/a/dac5224ea1ee678b3971ee7e787e347bb33ebd7c\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7\u0012,1/4/14a96e271eee17b8cb6a024196e14a9687418122\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84\u0012,2/1/213496e1745b0b6f7f2216db173414da5b3fb3fe\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323\u0012,1/9/19a53725141ba5c7c147d29fbcef2f91c6e78c9e\n�\u0001\nf.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/eventsHappy.R02KOg.meta\u0012,f/d/fd3bfcfe7a8289355d45d7700c032319792f6a68\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/4/b/4b0f33399d2ad76885e2133810100040aaaef442\u0012,c/1/c19ffce03104b6d9aaf03366be609f8416431e82\nS\n#.idea/sonarlint/issuestore/index.pb\u0012,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/6/06952d5a9b61287ca9696b812fd019e11d62a608\u0012,6/3/6385166b9d8bd02fc5f2fc3d83109ea57b3547bb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f\u0012,9/9/99244046e9ecd6d5015876414e65587b21921af2\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05\u0012,f/a/fa36fb4d7d459e4674ad72afa2d2830c8e652aaf
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+--- a/.idea/sonarlint/issuestore/index.pb	
++++ b/.idea/sonarlint/issuestore/index.pb	
+@@ -1,285 +1,61 @@
+ 
+-c
+-3src/main/java/org/example/db/ConnectionManager.java,3/9/399b973cc236fe4ad17990fdef72f9d719158511
+-S
+-#src/main/java/org/example/Main.java,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b
+-@
+-RestTemplate.iml,7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323
+-7
+-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
++d
++4src/main/java/org/example/servlet/EventsServlet.java,e/d/edabca90873d67705bcd02728a1b58038b820c12
++9
++	Sasha.iml,3/4/343b9d4cba038eece7454d71a4744327cd1461ba
+ ^
+ .src/main/java/org/example/db/DBConnection.java,0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f
++y
++Isrc/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java,e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee
++|
++Lsrc/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java,4/b/4b0f33399d2ad76885e2133810100040aaaef442
++�
++Usrc/main/java/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.java,f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d
++g
++7src/main/java/org/example/servlet/EventsTagServlet.java,8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2
++j
++:src/main/java/org/example/servlet/ParticipantsServlet.java,0/7/072924ba0dea3de2d1b55cd8db523239e915d983
++d
++4src/main/java/org/example/model/EventsTagEntity.java,7/2/72001fc636679039a41b4c01b5693e17e4ca69bb
+ a
+ 1src/main/java/org/example/model/EventsEntity.java,5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6
++7
++pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+ g
+ 7src/main/java/org/example/model/ParticipantsEntity.java,3/0/30bc0e30a4a453658ec34bd531928ee89060af84
++c
++3src/main/java/org/example/model/CombinedEntity.java,8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84
+ m
+ =src/main/java/org/example/service/impl/EventsServiceImpl.java,3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd
+-d
+-4src/main/java/org/example/servlet/EventsServlet.java,e/d/edabca90873d67705bcd02728a1b58038b820c12
+-b
+-2src/main/java/org/example/util/PropertiesUtil.java,d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab
+-~
+-Nsrc/test/java/org/example/repository/mapper/EventsResultSetMapperImplTest.java,7/c/7c062b90b914879b596bcbb20bd113148319b060
+-V
+-&src/test/java/org/example/db/test.java,8/1/812fb7cf79004347eebd869a7321adcee02f6930
+-q
+-Asrc/test/java/org/example/service/impl/EventsServiceImplTest.java,0/6/06952d5a9b61287ca9696b812fd019e11d62a608
+-h
+-8src/test/java/org/example/servlet/EventsServletTest.java,8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59
+-u
+-Esrc/test/java/org/example/servlet/mapper/EventsDtomapperImplTest.java,1/6/164183f98badbc2937d32e02be69f86aeb7cd047
+-C
+-web/WEB-INF/web.xml,c/d/cdcc12da5c4054f6995aab32914d7e0243194c05
++n
++>src/main/java/org/example/repository/rep/EntityRepository.java,8/a/8a11b74aa9452b8c78e05af67f663542d968ab78
++{
++Ksrc/main/java/org/example/repository/rep/ext/EntityEntityRepositoryExt.java,a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8
++w
++Gsrc/main/java/org/example/repository/rep/EventsTagEntityRepository.java,f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7
+ c
+ 3src/main/java/org/example/servlet/dto/EventDTO.java,7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b
++u
++Esrc/main/java/org/example/servlet/mapper/CombinedEntityMapstruct.java,a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb
+ s
+ Csrc/main/java/org/example/servlet/mapper/EventsMapperMapstruct.java,d/a/da7dc781cba927bcc7bdd481b7a7d16247342515
+-�
+-Wsrc/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapper.java,7/c/7ca6f44ec667825e9345613479b56e0b27000da9
+-�
+-[src/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapperImpl.java,d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de
+-�
+-Qsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java,c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2
+-}
+-Msrc/main/java/org/example/repository/mapper/events/EventsResultSetMapper.java,8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885
+-o
+-?src/main/java/org/example/service/serverImpl/EventsService.java,1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3
+-u
+-Esrc/main/java/org/example/service/serverImpl/ParticipantsService.java,2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb
+-s
+-Csrc/main/java/org/example/service/impl/ParticipantsServiceImpl.java,f/8/f8a0149525805356fadbe0bcca462acdbd078788
+-j
+-:src/main/java/org/example/servlet/dto/ParticipantsDTO.java,b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8
++g
++7src/main/java/org/example/servlet/dto/EventsTagDTO.java,b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66
++v
++Fsrc/main/java/org/example/servlet/mapper/EventsTagMapperMapstruct.java,d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462
+ y
+ Isrc/main/java/org/example/servlet/mapper/ParticipantsMapperMapstruct.java,d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a
+-j
+-:src/main/java/org/example/servlet/ParticipantsServlet.java,0/7/072924ba0dea3de2d1b55cd8db523239e915d983
+-~
+-Nsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsParImpl.java,1/7/1783fa9e166fe671310f285534b8159f8ab20ae4
+-z
+-Jsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsPar.java,a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72
+-~
+-Nsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsParImpl.java,6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3
+-z
+-Jsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsPar.java,8/7/87b796270e3c169fda43db8ca6209eaafedf8925
+ p
+ @src/main/java/org/example/util/json/jsonEvent/JsonConvector.java,2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1
+ t
+ Dsrc/main/java/org/example/util/json/jsonEvent/JsonConvectorImpl.java,2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9
+-d
+-4src/main/java/org/example/model/EventsTagEntity.java,7/2/72001fc636679039a41b4c01b5693e17e4ca69bb
+-�
+-Xsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapperImpl.java,1/6/16b750e7a55158e93d78483b52a6f1b38d85d240
+-�
+-Tsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapper.java,e/e/eeef550778afd8938b3f64b7689badc3168f8cd5
+-r
+-Bsrc/main/java/org/example/service/serverImpl/EventsTagService.java,e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c
+-g
+-7src/main/java/org/example/servlet/dto/EventsTagDTO.java,b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66
+-v
+-Fsrc/main/java/org/example/servlet/mapper/EventsTagMapperMapstruct.java,d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462
++b
++2src/main/java/org/example/util/PropertiesUtil.java,d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab
++c
++3src/main/java/org/example/db/ConnectionManager.java,3/9/399b973cc236fe4ad17990fdef72f9d719158511
++l
++<src/main/java/org/example/servlet/dto/CombinedEntityDTO.java,c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69
+ p
+ @src/main/java/org/example/service/impl/EventsTagServiceImpl.java,1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003
+-g
+-7src/main/java/org/example/servlet/EventsTagServlet.java,8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2
+-w
+-Gsrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTag.java,6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d
+-{
+-Ksrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTagImpl.java,2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a
+-n
+->src/main/java/org/example/repository/rep/EntityRepository.java,8/a/8a11b74aa9452b8c78e05af67f663542d968ab78
+-t
+-Dsrc/main/java/org/example/repository/rep/ParticipantsRepository.java,d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52
+-~
+-Nsrc/main/java/org/example/repository/rep/ext/EventsTagEntityRepositoryExt.java,7/9/798a832e50c6772184676cda81726f12efccda00
+-{
+-Ksrc/main/java/org/example/repository/rep/ext/EntityEntityRepositoryExt.java,a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8
+-�
+-Usrc/main/java/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.java,f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d
+-�
+-Wsrc/main/java/org/example/repository/rep/ext/ParticipantsEntityEntityRepositoryExt.java,4/7/4713d65eb44c556dc57d25f8ff102c0342407d96
+-|
+-Lsrc/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java,4/b/4b0f33399d2ad76885e2133810100040aaaef442
+-w
+-Gsrc/main/java/org/example/repository/rep/EventsTagEntityRepository.java,f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7
+-c
+-3src/main/java/org/example/model/CombinedEntity.java,8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84
+-l
+-<src/main/java/org/example/servlet/dto/CombinedEntityDTO.java,c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69
+-u
+-Esrc/main/java/org/example/servlet/mapper/CombinedEntityMapstruct.java,a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb
+-{
+-Ksrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombined.java,2/9/2989ae34155d099b25203cf93bcfb4cef55daafc
+-
+-Osrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombinedImpl.java,b/7/b7f095576bcb16aeeca72052935ec009c71f1274
+-y
+-Isrc/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java,e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee
+-}
+-Msrc/test/java/org/example/repository/impl/EventsEntityRepositoryImplTest.java,b/b/bbf695e28c73becca961fa813ec710aa7d0933ad
+-w
+-G.idea/sonarlint/issuestore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05,1/3/138fedb141a074bd0ec70ae8211796c9f35c7ae4
+-9
+-	Sasha.iml,3/4/343b9d4cba038eece7454d71a4744327cd1461ba
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/c/7c062b90b914879b596bcbb20bd113148319b060,2/5/2515acfe0420221e2f43ccfad6302fa4768d585e
+-w
+-G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b,a/b/abe25e851ee828e40a94fcb1c1be6f78ff7a04cf
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/b/bbf695e28c73becca961fa813ec710aa7d0933ad,9/d/9da57946bc10cdae188544a0ac2206ad77569895
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee,6/9/6972e890bae36137bfcab9994a009d733e663e4d
+-�
+-Q.idea/sonarlint/securityhotspotstore/6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d,5/9/59b2e2f586d71217755ef37c9d6e05b63dbf3ec6
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a,6/8/68dd76095b1531d113bdfea55d8e35afc2f2c9f7
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/1/812fb7cf79004347eebd869a7321adcee02f6930,a/d/adde181fcb0e9eb781478a71f7f79a9832d5f26e
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2,e/b/eb37642e31b799cfe5ad003c5ca94727c4cc19d0
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52,a/a/aab12f8f8b41d9c737b350709576124d1cb8f629
+-w
+-G.idea/sonarlint/issuestore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003,e/0/e044802f1103303973f960a2025c2f0e3dbe094a
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c,b/6/b6f4a6cffe20a659ec7b24f29b099f8f82674ba8
+-w
+-G.idea/sonarlint/issuestore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8,c/5/c50af96e1aeac5ad3b4be7868d2ebbcefbd82155
+-w
+-G.idea/sonarlint/issuestore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52,a/c/ac5ce0e4fc23769c92df8fb122b8caf95b94cfe5
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59,4/c/4c0ae7fd73d67da08de82308cd1f72186f0c1372
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/9/798a832e50c6772184676cda81726f12efccda00,6/c/6caec5420c6c802fcc3d0db97844a02ec86e757d
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462,f/4/f48318e5f6a35ad1117cb57308eb0b512aca467e
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b,7/7/77eb6133e1a8411356a9d1a13e2cee307ee02a7e
+-�
+-Q.idea/sonarlint/securityhotspotstore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8,f/5/f53d0a74609fc71f0b5411f6a75ddd13054516dc
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/a/8a11b74aa9452b8c78e05af67f663542d968ab78,0/f/0f47095afc2897a1bdbc5acaecf8368492fae5af
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66,0/d/0d56aeb53968ba8c4e25be46c515c21662a7f33e
+-j
+-:.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c.xml,5/b/5b4b328784f2d250a2a215fee1bf98193bddeb10
+-�
+-Q.idea/sonarlint/securityhotspotstore/f/8/f8a0149525805356fadbe0bcca462acdbd078788,d/f/dfd8bb2a945d6db2c4a819be9dbfdb8b7e07c3db
+-�
+-^.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/sys.zb4BAA.meta,0/3/03cccb99bd2438b92229bc4f2f18b8399065e37b
+-w
+-G.idea/sonarlint/issuestore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323,8/e/8e034a738f67dda2c825cb82017d25d565d7ba88
+-w
+-G.idea/sonarlint/issuestore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462,a/1/a1eb3808326a72c5d37e2346778e8ee99a5f0fc8
+-�
+-`.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/mysql.osA4Bg.meta,a/4/a49c1c0acd7c8924d3dceeb9cf0f6a2f8c4f9fe4
+-�
+-m.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta,c/f/cfcfe638004fe38142399840dfa06b5820f65eeb
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003,0/0/00c7657a15f5b1319fb8cc23d5c6d15c5372929b
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3,5/0/5066a26e4103b3fd8eb4f5e139ec1989fbbc7c0a
+-�
+-m.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta,3/5/359289bc23e8c3d267c86f82fc7a6bcd504b8edc
+-w
+-G.idea/sonarlint/issuestore/8/1/812fb7cf79004347eebd869a7321adcee02f6930,2/3/23a13f0034acf0d16938c46db40bb58c100d5288
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/6/164183f98badbc2937d32e02be69f86aeb7cd047,0/5/05395fdd55168d23114ddbd725cc7aa1cd33ef2f
+-�
+-Q.idea/sonarlint/securityhotspotstore/f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d,7/9/79670135c111808e7da3b0e65e29285a24a183fb
+-�
+-Q.idea/sonarlint/securityhotspotstore/4/7/4713d65eb44c556dc57d25f8ff102c0342407d96,b/c/bc3c4f9355837e511e42505e78ce155ec5055f5b
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9,e/3/e31dc911bf928ce92622da46c6f00df203bbaee2
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb,d/7/d7f6293de818cbc531450632a3c39a0580d2ce78
+-w
+-G.idea/sonarlint/issuestore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5,1/3/13c241ea6a3ec34cbcf398171b0a94a06c023162
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de,2/e/2e038f245fa67ad12770e366e18faaae199820fb
+-�
+-Q.idea/sonarlint/securityhotspotstore/3/0/30bc0e30a4a453658ec34bd531928ee89060af84,5/d/5d2783d825f7a87d67c619e6eef3442dbfc7f091
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9,5/a/5a5cc3bfd4629d2691a854b73dcb220a46e18b38
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885,d/9/d955eb9382235e4c1c187eec44a8067d7888bbbb
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1,9/1/910c4ec5a4c53e713eedc07c0e524c9415635b2a
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/2/72001fc636679039a41b4c01b5693e17e4ca69bb,b/2/b277dfd4e3a772ccd4e44f1d25da2e90e48564d3
+-\
+-,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
+-w
+-G.idea/sonarlint/issuestore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a,e/1/e130c8283c618fcc2c1ed3721faf8f7a65a2930a
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/7/072924ba0dea3de2d1b55cd8db523239e915d983,4/1/41ef0dcd99f344adf54f5b9fe78a528c428c1e86
+-]
+--.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8,e/8/e8dc50650f68a3ac5cefdea1f097d6b4c0985b68
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a,e/a/ea6d3a297026bd55adf99b643fcf530af570aaee
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/7/1783fa9e166fe671310f285534b8159f8ab20ae4,4/3/430d774008f7cceebd580ae1cb555ef52a9af375
+-�
+-Q.idea/sonarlint/securityhotspotstore/a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72,5/f/5f29141be4285c3bece6ed2d8e7b8189c0cc4625
+-�
+-Q.idea/sonarlint/securityhotspotstore/3/9/399b973cc236fe4ad17990fdef72f9d719158511,d/a/da9aab7a117407688a6d7c8cb725561fdf03a976
+-�
+-Q.idea/sonarlint/securityhotspotstore/3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd,e/5/e5e7ccd3d286c9f0ae27f4ea0a9715e7e29bc61a
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab,7/a/7a091de22e42e5598c1e5827e03ec6b755315248
+-�
+-Q.idea/sonarlint/securityhotspotstore/c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2,1/8/182790867d31a73111a11d612f6400aa898750e4
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925,8/f/8f64707679c1f65e612eecb69e9736e3844d1a3c
+-w
+-G.idea/sonarlint/issuestore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925,1/c/1c5c2484114d3cf07c2b37d0ee554f5a3208fa56
+-�
+-Q.idea/sonarlint/securityhotspotstore/6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3,9/8/98311829c662ff79848fb15eb5807df273eb2a65
+-�
+-Q.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,2/c/2cabb939da04d3de3a200bf2b575690e1a16316d
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/d/edabca90873d67705bcd02728a1b58038b820c12,9/5/956d6c8dba519d954c90b26fcc3355691fab23c7
+-�
+-Q.idea/sonarlint/securityhotspotstore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb,c/5/c56dcce4c466a34acfebf97f69f71ab5ee7d567f
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/a/da7dc781cba927bcc7bdd481b7a7d16247342515,e/9/e9ff6cccff9a7b0bcca723af8a0a89362109e379
+-�
+-Q.idea/sonarlint/securityhotspotstore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69,3/0/30fbd686bd332eb4a491eaea69d28f7b6aaa92a8
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/7/b7f095576bcb16aeeca72052935ec009c71f1274,4/c/4c04a47597151b8057bcb3b2676260931894adfd
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/6/16b750e7a55158e93d78483b52a6f1b38d85d240,3/b/3ba4f2bd00087af61b194db7884573789ee1f6e9
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/9/2989ae34155d099b25203cf93bcfb4cef55daafc,2/6/26b4105e17849b76d4a7d9e4e71d83afef625d43
+-w
+-G.idea/sonarlint/issuestore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69,d/8/d8c9147efbc372423248a94cd4e89b8bd15f8b6d
+-w
+-G.idea/sonarlint/issuestore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9,e/4/e427e0b4bb9306e0fd9dc04acba04f80d72d0b13
+-w
+-G.idea/sonarlint/issuestore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb,d/c/dc47386184b30b51dbc33c3a73d86d3e7c691d2c
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5,0/2/027e8cebe1735d2d8523e931d868cecd0304d038
+-�
+-Q.idea/sonarlint/securityhotspotstore/5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6,d/a/dac5224ea1ee678b3971ee7e787e347bb33ebd7c
+-�
+-Q.idea/sonarlint/securityhotspotstore/f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7,1/4/14a96e271eee17b8cb6a024196e14a9687418122
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84,2/1/213496e1745b0b6f7f2216db173414da5b3fb3fe
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323,1/9/19a53725141ba5c7c147d29fbcef2f91c6e78c9e
+-�
+-f.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/eventsHappy.R02KOg.meta,f/d/fd3bfcfe7a8289355d45d7700c032319792f6a68
+-�
+-Q.idea/sonarlint/securityhotspotstore/4/b/4b0f33399d2ad76885e2133810100040aaaef442,c/1/c19ffce03104b6d9aaf03366be609f8416431e82
+-S
+-#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/6/06952d5a9b61287ca9696b812fd019e11d62a608,6/3/6385166b9d8bd02fc5f2fc3d83109ea57b3547bb
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f,9/9/99244046e9ecd6d5015876414e65587b21921af2
+ �
+-Q.idea/sonarlint/securityhotspotstore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05,f/a/fa36fb4d7d459e4674ad72afa2d2830c8e652aaf
+\ No newline at end of file
++Qsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java,c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2
+\ No newline at end of file
+Index: .idea/sonarlint/securityhotspotstore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nc\n3src/main/java/org/example/db/ConnectionManager.java\u0012,3/9/399b973cc236fe4ad17990fdef72f9d719158511\nS\n#src/main/java/org/example/Main.java\u0012,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b\n@\n\u0010RestTemplate.iml\u0012,7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323\n7\n\u0007pom.xml\u0012,4/4/442292b8a7efeabbe4cc176709b833b1792140ec\n^\n.src/main/java/org/example/db/DBConnection.java\u0012,0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f\na\n1src/main/java/org/example/model/EventsEntity.java\u0012,5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6\ng\n7src/main/java/org/example/model/ParticipantsEntity.java\u0012,3/0/30bc0e30a4a453658ec34bd531928ee89060af84\nm\n=src/main/java/org/example/service/impl/EventsServiceImpl.java\u0012,3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd\nd\n4src/main/java/org/example/servlet/EventsServlet.java\u0012,e/d/edabca90873d67705bcd02728a1b58038b820c12\nb\n2src/main/java/org/example/util/PropertiesUtil.java\u0012,d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab\n~\nNsrc/test/java/org/example/repository/mapper/EventsResultSetMapperImplTest.java\u0012,7/c/7c062b90b914879b596bcbb20bd113148319b060\nV\n&src/test/java/org/example/db/test.java\u0012,8/1/812fb7cf79004347eebd869a7321adcee02f6930\nq\nAsrc/test/java/org/example/service/impl/EventsServiceImplTest.java\u0012,0/6/06952d5a9b61287ca9696b812fd019e11d62a608\nh\n8src/test/java/org/example/servlet/EventsServletTest.java\u0012,8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59\nu\nEsrc/test/java/org/example/servlet/mapper/EventsDtomapperImplTest.java\u0012,1/6/164183f98badbc2937d32e02be69f86aeb7cd047\nC\n\u0013web/WEB-INF/web.xml\u0012,c/d/cdcc12da5c4054f6995aab32914d7e0243194c05\nc\n3src/main/java/org/example/servlet/dto/EventDTO.java\u0012,7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b\ns\nCsrc/main/java/org/example/servlet/mapper/EventsMapperMapstruct.java\u0012,d/a/da7dc781cba927bcc7bdd481b7a7d16247342515\n�\u0001\nWsrc/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapper.java\u0012,7/c/7ca6f44ec667825e9345613479b56e0b27000da9\n�\u0001\n[src/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapperImpl.java\u0012,d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de\n�\u0001\nQsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java\u0012,c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2\n}\nMsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapper.java\u0012,8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885\no\n?src/main/java/org/example/service/serverImpl/EventsService.java\u0012,1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3\nu\nEsrc/main/java/org/example/service/serverImpl/ParticipantsService.java\u0012,2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb\ns\nCsrc/main/java/org/example/service/impl/ParticipantsServiceImpl.java\u0012,f/8/f8a0149525805356fadbe0bcca462acdbd078788\nj\n:src/main/java/org/example/servlet/dto/ParticipantsDTO.java\u0012,b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8\ny\nIsrc/main/java/org/example/servlet/mapper/ParticipantsMapperMapstruct.java\u0012,d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a\nj\n:src/main/java/org/example/servlet/ParticipantsServlet.java\u0012,0/7/072924ba0dea3de2d1b55cd8db523239e915d983\n~\nNsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsParImpl.java\u0012,1/7/1783fa9e166fe671310f285534b8159f8ab20ae4\nz\nJsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsPar.java\u0012,a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72\n~\nNsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsParImpl.java\u0012,6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3\nz\nJsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsPar.java\u0012,8/7/87b796270e3c169fda43db8ca6209eaafedf8925\np\n@src/main/java/org/example/util/json/jsonEvent/JsonConvector.java\u0012,2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1\nt\nDsrc/main/java/org/example/util/json/jsonEvent/JsonConvectorImpl.java\u0012,2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9\nd\n4src/main/java/org/example/model/EventsTagEntity.java\u0012,7/2/72001fc636679039a41b4c01b5693e17e4ca69bb\n�\u0001\nXsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapperImpl.java\u0012,1/6/16b750e7a55158e93d78483b52a6f1b38d85d240\n�\u0001\nTsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapper.java\u0012,e/e/eeef550778afd8938b3f64b7689badc3168f8cd5\nr\nBsrc/main/java/org/example/service/serverImpl/EventsTagService.java\u0012,e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c\ng\n7src/main/java/org/example/servlet/dto/EventsTagDTO.java\u0012,b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66\nv\nFsrc/main/java/org/example/servlet/mapper/EventsTagMapperMapstruct.java\u0012,d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462\np\n@src/main/java/org/example/service/impl/EventsTagServiceImpl.java\u0012,1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003\ng\n7src/main/java/org/example/servlet/EventsTagServlet.java\u0012,8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2\nw\nGsrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTag.java\u0012,6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d\n{\nKsrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTagImpl.java\u0012,2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a\nn\n>src/main/java/org/example/repository/rep/EntityRepository.java\u0012,8/a/8a11b74aa9452b8c78e05af67f663542d968ab78\nt\nDsrc/main/java/org/example/repository/rep/ParticipantsRepository.java\u0012,d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52\n~\nNsrc/main/java/org/example/repository/rep/ext/EventsTagEntityRepositoryExt.java\u0012,7/9/798a832e50c6772184676cda81726f12efccda00\n{\nKsrc/main/java/org/example/repository/rep/ext/EntityEntityRepositoryExt.java\u0012,a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8\n�\u0001\nUsrc/main/java/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.java\u0012,f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d\n�\u0001\nWsrc/main/java/org/example/repository/rep/ext/ParticipantsEntityEntityRepositoryExt.java\u0012,4/7/4713d65eb44c556dc57d25f8ff102c0342407d96\n|\nLsrc/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java\u0012,4/b/4b0f33399d2ad76885e2133810100040aaaef442\nw\nGsrc/main/java/org/example/repository/rep/EventsTagEntityRepository.java\u0012,f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7\nc\n3src/main/java/org/example/model/CombinedEntity.java\u0012,8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84\nl\n<src/main/java/org/example/servlet/dto/CombinedEntityDTO.java\u0012,c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69\nu\nEsrc/main/java/org/example/servlet/mapper/CombinedEntityMapstruct.java\u0012,a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb\n{\nKsrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombined.java\u0012,2/9/2989ae34155d099b25203cf93bcfb4cef55daafc\n\u007F\nOsrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombinedImpl.java\u0012,b/7/b7f095576bcb16aeeca72052935ec009c71f1274\ny\nIsrc/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java\u0012,e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee\n}\nMsrc/test/java/org/example/repository/impl/EventsEntityRepositoryImplTest.java\u0012,b/b/bbf695e28c73becca961fa813ec710aa7d0933ad\nw\nG.idea/sonarlint/issuestore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05\u0012,1/3/138fedb141a074bd0ec70ae8211796c9f35c7ae4\n9\n\tSasha.iml\u0012,3/4/343b9d4cba038eece7454d71a4744327cd1461ba\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/c/7c062b90b914879b596bcbb20bd113148319b060\u0012,2/5/2515acfe0420221e2f43ccfad6302fa4768d585e\nw\nG.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec\u0012,8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b\u0012,a/b/abe25e851ee828e40a94fcb1c1be6f78ff7a04cf\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/b/bbf695e28c73becca961fa813ec710aa7d0933ad\u0012,9/d/9da57946bc10cdae188544a0ac2206ad77569895\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee\u0012,6/9/6972e890bae36137bfcab9994a009d733e663e4d\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d\u0012,5/9/59b2e2f586d71217755ef37c9d6e05b63dbf3ec6\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a\u0012,6/8/68dd76095b1531d113bdfea55d8e35afc2f2c9f7\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/1/812fb7cf79004347eebd869a7321adcee02f6930\u0012,a/d/adde181fcb0e9eb781478a71f7f79a9832d5f26e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2\u0012,e/b/eb37642e31b799cfe5ad003c5ca94727c4cc19d0\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52\u0012,a/a/aab12f8f8b41d9c737b350709576124d1cb8f629\nw\nG.idea/sonarlint/issuestore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003\u0012,e/0/e044802f1103303973f960a2025c2f0e3dbe094a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c\u0012,b/6/b6f4a6cffe20a659ec7b24f29b099f8f82674ba8\nw\nG.idea/sonarlint/issuestore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8\u0012,c/5/c50af96e1aeac5ad3b4be7868d2ebbcefbd82155\nw\nG.idea/sonarlint/issuestore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52\u0012,a/c/ac5ce0e4fc23769c92df8fb122b8caf95b94cfe5\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59\u0012,4/c/4c0ae7fd73d67da08de82308cd1f72186f0c1372\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/9/798a832e50c6772184676cda81726f12efccda00\u0012,6/c/6caec5420c6c802fcc3d0db97844a02ec86e757d\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462\u0012,f/4/f48318e5f6a35ad1117cb57308eb0b512aca467e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b\u0012,7/7/77eb6133e1a8411356a9d1a13e2cee307ee02a7e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8\u0012,f/5/f53d0a74609fc71f0b5411f6a75ddd13054516dc\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/a/8a11b74aa9452b8c78e05af67f663542d968ab78\u0012,0/f/0f47095afc2897a1bdbc5acaecf8368492fae5af\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66\u0012,0/d/0d56aeb53968ba8c4e25be46c515c21662a7f33e\nj\n:.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c.xml\u0012,5/b/5b4b328784f2d250a2a215fee1bf98193bddeb10\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/f/8/f8a0149525805356fadbe0bcca462acdbd078788\u0012,d/f/dfd8bb2a945d6db2c4a819be9dbfdb8b7e07c3db\n�\u0001\n^.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/sys.zb4BAA.meta\u0012,0/3/03cccb99bd2438b92229bc4f2f18b8399065e37b\nw\nG.idea/sonarlint/issuestore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323\u0012,8/e/8e034a738f67dda2c825cb82017d25d565d7ba88\nw\nG.idea/sonarlint/issuestore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462\u0012,a/1/a1eb3808326a72c5d37e2346778e8ee99a5f0fc8\n�\u0001\n`.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/mysql.osA4Bg.meta\u0012,a/4/a49c1c0acd7c8924d3dceeb9cf0f6a2f8c4f9fe4\n�\u0001\nm.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta\u0012,c/f/cfcfe638004fe38142399840dfa06b5820f65eeb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003\u0012,0/0/00c7657a15f5b1319fb8cc23d5c6d15c5372929b\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3\u0012,5/0/5066a26e4103b3fd8eb4f5e139ec1989fbbc7c0a\n�\u0001\nm.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta\u0012,3/5/359289bc23e8c3d267c86f82fc7a6bcd504b8edc\nw\nG.idea/sonarlint/issuestore/8/1/812fb7cf79004347eebd869a7321adcee02f6930\u0012,2/3/23a13f0034acf0d16938c46db40bb58c100d5288\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/6/164183f98badbc2937d32e02be69f86aeb7cd047\u0012,0/5/05395fdd55168d23114ddbd725cc7aa1cd33ef2f\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d\u0012,7/9/79670135c111808e7da3b0e65e29285a24a183fb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/4/7/4713d65eb44c556dc57d25f8ff102c0342407d96\u0012,b/c/bc3c4f9355837e511e42505e78ce155ec5055f5b\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9\u0012,e/3/e31dc911bf928ce92622da46c6f00df203bbaee2\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb\u0012,d/7/d7f6293de818cbc531450632a3c39a0580d2ce78\nw\nG.idea/sonarlint/issuestore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5\u0012,1/3/13c241ea6a3ec34cbcf398171b0a94a06c023162\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de\u0012,2/e/2e038f245fa67ad12770e366e18faaae199820fb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/3/0/30bc0e30a4a453658ec34bd531928ee89060af84\u0012,5/d/5d2783d825f7a87d67c619e6eef3442dbfc7f091\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9\u0012,5/a/5a5cc3bfd4629d2691a854b73dcb220a46e18b38\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885\u0012,d/9/d955eb9382235e4c1c187eec44a8067d7888bbbb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1\u0012,9/1/910c4ec5a4c53e713eedc07c0e524c9415635b2a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/2/72001fc636679039a41b4c01b5693e17e4ca69bb\u0012,b/2/b277dfd4e3a772ccd4e44f1d25da2e90e48564d3\n\\\n,.idea/inspectionProfiles/Project_Default.xml\u0012,4/9/496a238a6afa168dbaf6efd37bb459331589579c\nw\nG.idea/sonarlint/issuestore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a\u0012,e/1/e130c8283c618fcc2c1ed3721faf8f7a65a2930a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/7/072924ba0dea3de2d1b55cd8db523239e915d983\u0012,4/1/41ef0dcd99f344adf54f5b9fe78a528c428c1e86\n]\n-.idea/sonarlint/securityhotspotstore/index.pb\u0012,8/8/88a9255124c95bdc913197c120a8d560edc59c8e\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8\u0012,e/8/e8dc50650f68a3ac5cefdea1f097d6b4c0985b68\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a\u0012,e/a/ea6d3a297026bd55adf99b643fcf530af570aaee\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/7/1783fa9e166fe671310f285534b8159f8ab20ae4\u0012,4/3/430d774008f7cceebd580ae1cb555ef52a9af375\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72\u0012,5/f/5f29141be4285c3bece6ed2d8e7b8189c0cc4625\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/3/9/399b973cc236fe4ad17990fdef72f9d719158511\u0012,d/a/da9aab7a117407688a6d7c8cb725561fdf03a976\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd\u0012,e/5/e5e7ccd3d286c9f0ae27f4ea0a9715e7e29bc61a\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab\u0012,7/a/7a091de22e42e5598c1e5827e03ec6b755315248\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2\u0012,1/8/182790867d31a73111a11d612f6400aa898750e4\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925\u0012,8/f/8f64707679c1f65e612eecb69e9736e3844d1a3c\nw\nG.idea/sonarlint/issuestore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925\u0012,1/c/1c5c2484114d3cf07c2b37d0ee554f5a3208fa56\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3\u0012,9/8/98311829c662ff79848fb15eb5807df273eb2a65\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec\u0012,2/c/2cabb939da04d3de3a200bf2b575690e1a16316d\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/d/edabca90873d67705bcd02728a1b58038b820c12\u0012,9/5/956d6c8dba519d954c90b26fcc3355691fab23c7\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb\u0012,c/5/c56dcce4c466a34acfebf97f69f71ab5ee7d567f\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/d/a/da7dc781cba927bcc7bdd481b7a7d16247342515\u0012,e/9/e9ff6cccff9a7b0bcca723af8a0a89362109e379\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69\u0012,3/0/30fbd686bd332eb4a491eaea69d28f7b6aaa92a8\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/b/7/b7f095576bcb16aeeca72052935ec009c71f1274\u0012,4/c/4c04a47597151b8057bcb3b2676260931894adfd\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/1/6/16b750e7a55158e93d78483b52a6f1b38d85d240\u0012,3/b/3ba4f2bd00087af61b194db7884573789ee1f6e9\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/2/9/2989ae34155d099b25203cf93bcfb4cef55daafc\u0012,2/6/26b4105e17849b76d4a7d9e4e71d83afef625d43\nw\nG.idea/sonarlint/issuestore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69\u0012,d/8/d8c9147efbc372423248a94cd4e89b8bd15f8b6d\nw\nG.idea/sonarlint/issuestore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9\u0012,e/4/e427e0b4bb9306e0fd9dc04acba04f80d72d0b13\nw\nG.idea/sonarlint/issuestore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb\u0012,d/c/dc47386184b30b51dbc33c3a73d86d3e7c691d2c\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5\u0012,0/2/027e8cebe1735d2d8523e931d868cecd0304d038\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6\u0012,d/a/dac5224ea1ee678b3971ee7e787e347bb33ebd7c\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7\u0012,1/4/14a96e271eee17b8cb6a024196e14a9687418122\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84\u0012,2/1/213496e1745b0b6f7f2216db173414da5b3fb3fe\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323\u0012,1/9/19a53725141ba5c7c147d29fbcef2f91c6e78c9e\n�\u0001\nf.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/eventsHappy.R02KOg.meta\u0012,f/d/fd3bfcfe7a8289355d45d7700c032319792f6a68\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/4/b/4b0f33399d2ad76885e2133810100040aaaef442\u0012,c/1/c19ffce03104b6d9aaf03366be609f8416431e82\nS\n#.idea/sonarlint/issuestore/index.pb\u0012,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/6/06952d5a9b61287ca9696b812fd019e11d62a608\u0012,6/3/6385166b9d8bd02fc5f2fc3d83109ea57b3547bb\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f\u0012,9/9/99244046e9ecd6d5015876414e65587b21921af2\n�\u0001\nQ.idea/sonarlint/securityhotspotstore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05\u0012,f/a/fa36fb4d7d459e4674ad72afa2d2830c8e652aaf
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/securityhotspotstore/index.pb b/.idea/sonarlint/securityhotspotstore/index.pb
+--- a/.idea/sonarlint/securityhotspotstore/index.pb	
++++ b/.idea/sonarlint/securityhotspotstore/index.pb	
+@@ -1,285 +1,61 @@
+ 
+-c
+-3src/main/java/org/example/db/ConnectionManager.java,3/9/399b973cc236fe4ad17990fdef72f9d719158511
+-S
+-#src/main/java/org/example/Main.java,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b
+-@
+-RestTemplate.iml,7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323
+-7
+-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
++d
++4src/main/java/org/example/servlet/EventsServlet.java,e/d/edabca90873d67705bcd02728a1b58038b820c12
++9
++	Sasha.iml,3/4/343b9d4cba038eece7454d71a4744327cd1461ba
+ ^
+ .src/main/java/org/example/db/DBConnection.java,0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f
++y
++Isrc/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java,e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee
++|
++Lsrc/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java,4/b/4b0f33399d2ad76885e2133810100040aaaef442
++�
++Usrc/main/java/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.java,f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d
++g
++7src/main/java/org/example/servlet/EventsTagServlet.java,8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2
++j
++:src/main/java/org/example/servlet/ParticipantsServlet.java,0/7/072924ba0dea3de2d1b55cd8db523239e915d983
++d
++4src/main/java/org/example/model/EventsTagEntity.java,7/2/72001fc636679039a41b4c01b5693e17e4ca69bb
+ a
+ 1src/main/java/org/example/model/EventsEntity.java,5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6
++7
++pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+ g
+ 7src/main/java/org/example/model/ParticipantsEntity.java,3/0/30bc0e30a4a453658ec34bd531928ee89060af84
++c
++3src/main/java/org/example/model/CombinedEntity.java,8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84
+ m
+ =src/main/java/org/example/service/impl/EventsServiceImpl.java,3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd
+-d
+-4src/main/java/org/example/servlet/EventsServlet.java,e/d/edabca90873d67705bcd02728a1b58038b820c12
+-b
+-2src/main/java/org/example/util/PropertiesUtil.java,d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab
+-~
+-Nsrc/test/java/org/example/repository/mapper/EventsResultSetMapperImplTest.java,7/c/7c062b90b914879b596bcbb20bd113148319b060
+-V
+-&src/test/java/org/example/db/test.java,8/1/812fb7cf79004347eebd869a7321adcee02f6930
+-q
+-Asrc/test/java/org/example/service/impl/EventsServiceImplTest.java,0/6/06952d5a9b61287ca9696b812fd019e11d62a608
+-h
+-8src/test/java/org/example/servlet/EventsServletTest.java,8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59
+-u
+-Esrc/test/java/org/example/servlet/mapper/EventsDtomapperImplTest.java,1/6/164183f98badbc2937d32e02be69f86aeb7cd047
+-C
+-web/WEB-INF/web.xml,c/d/cdcc12da5c4054f6995aab32914d7e0243194c05
++n
++>src/main/java/org/example/repository/rep/EntityRepository.java,8/a/8a11b74aa9452b8c78e05af67f663542d968ab78
++{
++Ksrc/main/java/org/example/repository/rep/ext/EntityEntityRepositoryExt.java,a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8
++w
++Gsrc/main/java/org/example/repository/rep/EventsTagEntityRepository.java,f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7
+ c
+ 3src/main/java/org/example/servlet/dto/EventDTO.java,7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b
++u
++Esrc/main/java/org/example/servlet/mapper/CombinedEntityMapstruct.java,a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb
+ s
+ Csrc/main/java/org/example/servlet/mapper/EventsMapperMapstruct.java,d/a/da7dc781cba927bcc7bdd481b7a7d16247342515
+-�
+-Wsrc/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapper.java,7/c/7ca6f44ec667825e9345613479b56e0b27000da9
+-�
+-[src/main/java/org/example/repository/mapper/partipants/ParticipantsResultSetMapperImpl.java,d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de
+-�
+-Qsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java,c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2
+-}
+-Msrc/main/java/org/example/repository/mapper/events/EventsResultSetMapper.java,8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885
+-o
+-?src/main/java/org/example/service/serverImpl/EventsService.java,1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3
+-u
+-Esrc/main/java/org/example/service/serverImpl/ParticipantsService.java,2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb
+-s
+-Csrc/main/java/org/example/service/impl/ParticipantsServiceImpl.java,f/8/f8a0149525805356fadbe0bcca462acdbd078788
+-j
+-:src/main/java/org/example/servlet/dto/ParticipantsDTO.java,b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8
++g
++7src/main/java/org/example/servlet/dto/EventsTagDTO.java,b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66
++v
++Fsrc/main/java/org/example/servlet/mapper/EventsTagMapperMapstruct.java,d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462
+ y
+ Isrc/main/java/org/example/servlet/mapper/ParticipantsMapperMapstruct.java,d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a
+-j
+-:src/main/java/org/example/servlet/ParticipantsServlet.java,0/7/072924ba0dea3de2d1b55cd8db523239e915d983
+-~
+-Nsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsParImpl.java,1/7/1783fa9e166fe671310f285534b8159f8ab20ae4
+-z
+-Jsrc/main/java/org/example/util/json/jsonParticipant/JsonConvectorsPar.java,a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72
+-~
+-Nsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsParImpl.java,6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3
+-z
+-Jsrc/main/java/org/example/util/json/jsonparticipant/JsonConvectorsPar.java,8/7/87b796270e3c169fda43db8ca6209eaafedf8925
+ p
+ @src/main/java/org/example/util/json/jsonEvent/JsonConvector.java,2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1
+ t
+ Dsrc/main/java/org/example/util/json/jsonEvent/JsonConvectorImpl.java,2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9
+-d
+-4src/main/java/org/example/model/EventsTagEntity.java,7/2/72001fc636679039a41b4c01b5693e17e4ca69bb
+-�
+-Xsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapperImpl.java,1/6/16b750e7a55158e93d78483b52a6f1b38d85d240
+-�
+-Tsrc/main/java/org/example/repository/mapper/eventstags/EventsTagResultSetMapper.java,e/e/eeef550778afd8938b3f64b7689badc3168f8cd5
+-r
+-Bsrc/main/java/org/example/service/serverImpl/EventsTagService.java,e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c
+-g
+-7src/main/java/org/example/servlet/dto/EventsTagDTO.java,b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66
+-v
+-Fsrc/main/java/org/example/servlet/mapper/EventsTagMapperMapstruct.java,d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462
++b
++2src/main/java/org/example/util/PropertiesUtil.java,d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab
++c
++3src/main/java/org/example/db/ConnectionManager.java,3/9/399b973cc236fe4ad17990fdef72f9d719158511
++l
++<src/main/java/org/example/servlet/dto/CombinedEntityDTO.java,c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69
+ p
+ @src/main/java/org/example/service/impl/EventsTagServiceImpl.java,1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003
+-g
+-7src/main/java/org/example/servlet/EventsTagServlet.java,8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2
+-w
+-Gsrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTag.java,6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d
+-{
+-Ksrc/main/java/org/example/util/json/jsonEventsTag/JsonConvectorTagImpl.java,2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a
+-n
+->src/main/java/org/example/repository/rep/EntityRepository.java,8/a/8a11b74aa9452b8c78e05af67f663542d968ab78
+-t
+-Dsrc/main/java/org/example/repository/rep/ParticipantsRepository.java,d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52
+-~
+-Nsrc/main/java/org/example/repository/rep/ext/EventsTagEntityRepositoryExt.java,7/9/798a832e50c6772184676cda81726f12efccda00
+-{
+-Ksrc/main/java/org/example/repository/rep/ext/EntityEntityRepositoryExt.java,a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8
+-�
+-Usrc/main/java/org/example/repository/impl/ParticipantsEntityEntityRepositoryImpl.java,f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d
+-�
+-Wsrc/main/java/org/example/repository/rep/ext/ParticipantsEntityEntityRepositoryExt.java,4/7/4713d65eb44c556dc57d25f8ff102c0342407d96
+-|
+-Lsrc/main/java/org/example/repository/impl/EventsTagEntityRepositoryImpl.java,4/b/4b0f33399d2ad76885e2133810100040aaaef442
+-w
+-Gsrc/main/java/org/example/repository/rep/EventsTagEntityRepository.java,f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7
+-c
+-3src/main/java/org/example/model/CombinedEntity.java,8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84
+-l
+-<src/main/java/org/example/servlet/dto/CombinedEntityDTO.java,c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69
+-u
+-Esrc/main/java/org/example/servlet/mapper/CombinedEntityMapstruct.java,a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb
+-{
+-Ksrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombined.java,2/9/2989ae34155d099b25203cf93bcfb4cef55daafc
+-
+-Osrc/main/java/org/example/util/json/jsonCombined/JsonConvectorCombinedImpl.java,b/7/b7f095576bcb16aeeca72052935ec009c71f1274
+-y
+-Isrc/main/java/org/example/repository/impl/EventsEntityRepositoryImpl.java,e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee
+-}
+-Msrc/test/java/org/example/repository/impl/EventsEntityRepositoryImplTest.java,b/b/bbf695e28c73becca961fa813ec710aa7d0933ad
+-w
+-G.idea/sonarlint/issuestore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05,1/3/138fedb141a074bd0ec70ae8211796c9f35c7ae4
+-9
+-	Sasha.iml,3/4/343b9d4cba038eece7454d71a4744327cd1461ba
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/c/7c062b90b914879b596bcbb20bd113148319b060,2/5/2515acfe0420221e2f43ccfad6302fa4768d585e
+-w
+-G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b,a/b/abe25e851ee828e40a94fcb1c1be6f78ff7a04cf
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/b/bbf695e28c73becca961fa813ec710aa7d0933ad,9/d/9da57946bc10cdae188544a0ac2206ad77569895
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/9/e9e4cddfa14b79972ef5e19fffcef627b8fb97ee,6/9/6972e890bae36137bfcab9994a009d733e663e4d
+-�
+-Q.idea/sonarlint/securityhotspotstore/6/1/61acf5e9d39d2c9e1eda47e865480b50c288634d,5/9/59b2e2f586d71217755ef37c9d6e05b63dbf3ec6
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/6/26cc220ff79f2ece3ae0aae66db1819e5553497a,6/8/68dd76095b1531d113bdfea55d8e35afc2f2c9f7
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/1/812fb7cf79004347eebd869a7321adcee02f6930,a/d/adde181fcb0e9eb781478a71f7f79a9832d5f26e
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/b/8b83b9fef9c6cb4d6ce4a246f080f30cb63441d2,e/b/eb37642e31b799cfe5ad003c5ca94727c4cc19d0
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52,a/a/aab12f8f8b41d9c737b350709576124d1cb8f629
+-w
+-G.idea/sonarlint/issuestore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003,e/0/e044802f1103303973f960a2025c2f0e3dbe094a
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/7/e7aea7446bb90e27fff0649465387efc7ccb9e9c,b/6/b6f4a6cffe20a659ec7b24f29b099f8f82674ba8
+-w
+-G.idea/sonarlint/issuestore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8,c/5/c50af96e1aeac5ad3b4be7868d2ebbcefbd82155
+-w
+-G.idea/sonarlint/issuestore/d/2/d248a350ee972551646d6baf42fb3ead7e8fdc52,a/c/ac5ce0e4fc23769c92df8fb122b8caf95b94cfe5
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/8/882c62c94db2fee24f4f16c51bff4ba21dad0f59,4/c/4c0ae7fd73d67da08de82308cd1f72186f0c1372
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/9/798a832e50c6772184676cda81726f12efccda00,6/c/6caec5420c6c802fcc3d0db97844a02ec86e757d
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462,f/4/f48318e5f6a35ad1117cb57308eb0b512aca467e
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/9/79bbb74620f4b58ff85e8c904087aa0acb5b5b5b,7/7/77eb6133e1a8411356a9d1a13e2cee307ee02a7e
+-�
+-Q.idea/sonarlint/securityhotspotstore/a/7/a75f82957da5cc1c604453d6754d2ecc830fb9d8,f/5/f53d0a74609fc71f0b5411f6a75ddd13054516dc
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/a/8a11b74aa9452b8c78e05af67f663542d968ab78,0/f/0f47095afc2897a1bdbc5acaecf8368492fae5af
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/1/b15e8c8d286f5d7b8e03ed61bc7207336ba0ac66,0/d/0d56aeb53968ba8c4e25be46c515c21662a7f33e
+-j
+-:.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c.xml,5/b/5b4b328784f2d250a2a215fee1bf98193bddeb10
+-�
+-Q.idea/sonarlint/securityhotspotstore/f/8/f8a0149525805356fadbe0bcca462acdbd078788,d/f/dfd8bb2a945d6db2c4a819be9dbfdb8b7e07c3db
+-�
+-^.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/sys.zb4BAA.meta,0/3/03cccb99bd2438b92229bc4f2f18b8399065e37b
+-w
+-G.idea/sonarlint/issuestore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323,8/e/8e034a738f67dda2c825cb82017d25d565d7ba88
+-w
+-G.idea/sonarlint/issuestore/d/8/d80f684fba15ee6e400a3ef0e19a4d302942e462,a/1/a1eb3808326a72c5d37e2346778e8ee99a5f0fc8
+-�
+-`.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/mysql.osA4Bg.meta,a/4/a49c1c0acd7c8924d3dceeb9cf0f6a2f8c4f9fe4
+-�
+-m.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta,c/f/cfcfe638004fe38142399840dfa06b5820f65eeb
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/c/1c847b5b3f03e62969ef0f8db80ab16e49eab003,0/0/00c7657a15f5b1319fb8cc23d5c6d15c5372929b
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/d/1d165460f0ca39010bf79a409b21b7a6988a71c3,5/0/5066a26e4103b3fd8eb4f5e139ec1989fbbc7c0a
+-�
+-m.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta,3/5/359289bc23e8c3d267c86f82fc7a6bcd504b8edc
+-w
+-G.idea/sonarlint/issuestore/8/1/812fb7cf79004347eebd869a7321adcee02f6930,2/3/23a13f0034acf0d16938c46db40bb58c100d5288
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/6/164183f98badbc2937d32e02be69f86aeb7cd047,0/5/05395fdd55168d23114ddbd725cc7aa1cd33ef2f
+-�
+-Q.idea/sonarlint/securityhotspotstore/f/f/ff5c6cdd577f39df58690d65d8d139a092f9e20d,7/9/79670135c111808e7da3b0e65e29285a24a183fb
+-�
+-Q.idea/sonarlint/securityhotspotstore/4/7/4713d65eb44c556dc57d25f8ff102c0342407d96,b/c/bc3c4f9355837e511e42505e78ce155ec5055f5b
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9,e/3/e31dc911bf928ce92622da46c6f00df203bbaee2
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/a/2ab24410e6e6d3a78913fc67d98586d446062ffb,d/7/d7f6293de818cbc531450632a3c39a0580d2ce78
+-w
+-G.idea/sonarlint/issuestore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5,1/3/13c241ea6a3ec34cbcf398171b0a94a06c023162
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/e/dea12519bf57dfa78f01596a7a6bd973b229d8de,2/e/2e038f245fa67ad12770e366e18faaae199820fb
+-�
+-Q.idea/sonarlint/securityhotspotstore/3/0/30bc0e30a4a453658ec34bd531928ee89060af84,5/d/5d2783d825f7a87d67c619e6eef3442dbfc7f091
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/1/21077a0abeb2cb99da844ba08d620a5c6b7950b9,5/a/5a5cc3bfd4629d2691a854b73dcb220a46e18b38
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/a/8afe08be92bbd9bd4d680313ba8a55cf7f7e5885,d/9/d955eb9382235e4c1c187eec44a8067d7888bbbb
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/d/2deb403d2a7effc0c358ec7ab779dff5951f42e1,9/1/910c4ec5a4c53e713eedc07c0e524c9415635b2a
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/2/72001fc636679039a41b4c01b5693e17e4ca69bb,b/2/b277dfd4e3a772ccd4e44f1d25da2e90e48564d3
+-\
+-,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
+-w
+-G.idea/sonarlint/issuestore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a,e/1/e130c8283c618fcc2c1ed3721faf8f7a65a2930a
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/7/072924ba0dea3de2d1b55cd8db523239e915d983,4/1/41ef0dcd99f344adf54f5b9fe78a528c428c1e86
+-]
+--.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/e/bef3e89622bf0d08bc38c03ef40f395685c972e8,e/8/e8dc50650f68a3ac5cefdea1f097d6b4c0985b68
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/9/d9b9c01fd07a00b70a9dcfa794753f5d4cd2bc9a,e/a/ea6d3a297026bd55adf99b643fcf530af570aaee
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/7/1783fa9e166fe671310f285534b8159f8ab20ae4,4/3/430d774008f7cceebd580ae1cb555ef52a9af375
+-�
+-Q.idea/sonarlint/securityhotspotstore/a/0/a08325a0894eb5eba91bbba54abe9b300c3c7a72,5/f/5f29141be4285c3bece6ed2d8e7b8189c0cc4625
+-�
+-Q.idea/sonarlint/securityhotspotstore/3/9/399b973cc236fe4ad17990fdef72f9d719158511,d/a/da9aab7a117407688a6d7c8cb725561fdf03a976
+-�
+-Q.idea/sonarlint/securityhotspotstore/3/b/3b08e5cb4dc2dc11ef27137a6a783376132deedd,e/5/e5e7ccd3d286c9f0ae27f4ea0a9715e7e29bc61a
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/9/d9da1e91797e8f167c7e7f31d28d3b2febeaf3ab,7/a/7a091de22e42e5598c1e5827e03ec6b755315248
+-�
+-Q.idea/sonarlint/securityhotspotstore/c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2,1/8/182790867d31a73111a11d612f6400aa898750e4
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925,8/f/8f64707679c1f65e612eecb69e9736e3844d1a3c
+-w
+-G.idea/sonarlint/issuestore/8/7/87b796270e3c169fda43db8ca6209eaafedf8925,1/c/1c5c2484114d3cf07c2b37d0ee554f5a3208fa56
+-�
+-Q.idea/sonarlint/securityhotspotstore/6/d/6d98104f9b8d23c1f7d056c2f181140aeb5ed6f3,9/8/98311829c662ff79848fb15eb5807df273eb2a65
+-�
+-Q.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,2/c/2cabb939da04d3de3a200bf2b575690e1a16316d
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/d/edabca90873d67705bcd02728a1b58038b820c12,9/5/956d6c8dba519d954c90b26fcc3355691fab23c7
+-�
+-Q.idea/sonarlint/securityhotspotstore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb,c/5/c56dcce4c466a34acfebf97f69f71ab5ee7d567f
+-�
+-Q.idea/sonarlint/securityhotspotstore/d/a/da7dc781cba927bcc7bdd481b7a7d16247342515,e/9/e9ff6cccff9a7b0bcca723af8a0a89362109e379
+-�
+-Q.idea/sonarlint/securityhotspotstore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69,3/0/30fbd686bd332eb4a491eaea69d28f7b6aaa92a8
+-�
+-Q.idea/sonarlint/securityhotspotstore/b/7/b7f095576bcb16aeeca72052935ec009c71f1274,4/c/4c04a47597151b8057bcb3b2676260931894adfd
+-�
+-Q.idea/sonarlint/securityhotspotstore/1/6/16b750e7a55158e93d78483b52a6f1b38d85d240,3/b/3ba4f2bd00087af61b194db7884573789ee1f6e9
+-�
+-Q.idea/sonarlint/securityhotspotstore/2/9/2989ae34155d099b25203cf93bcfb4cef55daafc,2/6/26b4105e17849b76d4a7d9e4e71d83afef625d43
+-w
+-G.idea/sonarlint/issuestore/c/e/ce1d4d75b4cfa706142bac44ae8f1aa73e07dd69,d/8/d8c9147efbc372423248a94cd4e89b8bd15f8b6d
+-w
+-G.idea/sonarlint/issuestore/7/c/7ca6f44ec667825e9345613479b56e0b27000da9,e/4/e427e0b4bb9306e0fd9dc04acba04f80d72d0b13
+-w
+-G.idea/sonarlint/issuestore/a/a/aacd5df32e3c1f65d1980ea82f4ccef576ab52bb,d/c/dc47386184b30b51dbc33c3a73d86d3e7c691d2c
+-�
+-Q.idea/sonarlint/securityhotspotstore/e/e/eeef550778afd8938b3f64b7689badc3168f8cd5,0/2/027e8cebe1735d2d8523e931d868cecd0304d038
+-�
+-Q.idea/sonarlint/securityhotspotstore/5/7/5773cfa4d23ce62c6b742c9cb6ef7c6a090ae7e6,d/a/dac5224ea1ee678b3971ee7e787e347bb33ebd7c
+-�
+-Q.idea/sonarlint/securityhotspotstore/f/5/f598d49fe99edcec72e0007b4a90e12bab142dd7,1/4/14a96e271eee17b8cb6a024196e14a9687418122
+-�
+-Q.idea/sonarlint/securityhotspotstore/8/6/86a8a1ad0c998954f001bd7ab52b42e331300d84,2/1/213496e1745b0b6f7f2216db173414da5b3fb3fe
+-�
+-Q.idea/sonarlint/securityhotspotstore/7/1/71dd49fc8c0039f95bdb0b5c563baa9c0699d323,1/9/19a53725141ba5c7c147d29fbcef2f91c6e78c9e
+-�
+-f.idea/dataSources/01ba28e2-39d4-47fd-b0b3-35e7ef66af9c/storage_v2/_src_/schema/eventsHappy.R02KOg.meta,f/d/fd3bfcfe7a8289355d45d7700c032319792f6a68
+-�
+-Q.idea/sonarlint/securityhotspotstore/4/b/4b0f33399d2ad76885e2133810100040aaaef442,c/1/c19ffce03104b6d9aaf03366be609f8416431e82
+-S
+-#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/6/06952d5a9b61287ca9696b812fd019e11d62a608,6/3/6385166b9d8bd02fc5f2fc3d83109ea57b3547bb
+-�
+-Q.idea/sonarlint/securityhotspotstore/0/8/089b55b002e457bd75cfc5f6dc79f52ee486293f,9/9/99244046e9ecd6d5015876414e65587b21921af2
+ �
+-Q.idea/sonarlint/securityhotspotstore/c/d/cdcc12da5c4054f6995aab32914d7e0243194c05,f/a/fa36fb4d7d459e4674ad72afa2d2830c8e652aaf
+\ No newline at end of file
++Qsrc/main/java/org/example/repository/mapper/events/EventsResultSetMapperImpl.java,c/0/c0ffc9c3a18871d2f8b30420645a41009e9c1bb2
+\ No newline at end of file
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"dataSourceStorageLocal\" created-in=\"IU-232.9921.47\">\n    <data-source name=\"eventsHappy@localhost\" uuid=\"01ba28e2-39d4-47fd-b0b3-35e7ef66af9c\">\n      <database-info product=\"MySQL\" version=\"8.3.0\" jdbc-version=\"4.2\" driver-name=\"MySQL Connector/J\" driver-version=\"mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)\" dbms=\"MYSQL\" exact-version=\"8.3.0\" exact-driver-version=\"8.0\">\n        <extra-name-characters>#@</extra-name-characters>\n        <identifier-quote-string>`</identifier-quote-string>\n      </database-info>\n      <case-sensitivity plain-identifiers=\"mixed\" quoted-identifiers=\"mixed\" />\n      <secret-storage>master_key</secret-storage>\n      <user-name>root</user-name>\n      <schema-mapping>\n        <introspection-scope>\n          <node kind=\"schema\">\n            <name qname=\"@\" />\n            <name qname=\"eventsHappy\" />\n          </node>\n        </introspection-scope>\n      </schema-mapping>\n    </data-source>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+--- a/.idea/dataSources.local.xml	
++++ b/.idea/dataSources.local.xml	
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="dataSourceStorageLocal" created-in="IU-232.9921.47">
+-    <data-source name="eventsHappy@localhost" uuid="01ba28e2-39d4-47fd-b0b3-35e7ef66af9c">
++    <data-source name="eventsHappy@localhost" uuid="64a18895-b9c0-4dd0-a491-df1528f89d34">
+       <database-info product="MySQL" version="8.3.0" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.3.0" exact-driver-version="8.0">
+         <extra-name-characters>#@</extra-name-characters>
+         <identifier-quote-string>`</identifier-quote-string>
+@@ -11,10 +11,7 @@
+       <user-name>root</user-name>
+       <schema-mapping>
+         <introspection-scope>
+-          <node kind="schema">
+-            <name qname="@" />
+-            <name qname="eventsHappy" />
+-          </node>
++          <node kind="schema" qname="eventsHappy" />
+         </introspection-scope>
+       </schema-mapping>
+     </data-source>
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"DataSourceManagerImpl\" format=\"xml\" multifile-model=\"true\">\n    <data-source source=\"LOCAL\" name=\"eventsHappy@localhost\" uuid=\"01ba28e2-39d4-47fd-b0b3-35e7ef66af9c\">\n      <driver-ref>mysql.8</driver-ref>\n      <synchronize>true</synchronize>\n      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>\n      <jdbc-url>jdbc:mysql://localhost:3306/eventsHappy</jdbc-url>\n      <working-dir>$ProjectFileDir$</working-dir>\n    </data-source>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+--- a/.idea/dataSources.xml	
++++ b/.idea/dataSources.xml	
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+-    <data-source source="LOCAL" name="eventsHappy@localhost" uuid="01ba28e2-39d4-47fd-b0b3-35e7ef66af9c">
++    <data-source source="LOCAL" name="eventsHappy@localhost" uuid="64a18895-b9c0-4dd0-a491-df1528f89d34">
+       <driver-ref>mysql.8</driver-ref>
+       <synchronize>true</synchronize>
+       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\n  <component name=\"MavenProjectsManager\">\n    <option name=\"originalFiles\">\n      <list>\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_15\" project-jdk-name=\"azul-15\" project-jdk-type=\"JavaSDK\" />\n</project>
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,12 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="MavenProjectsManager">
+-    <option name="originalFiles">
+-      <list>
+-        <option value="$PROJECT_DIR$/pom.xml" />
+-      </list>
+-    </option>
+-  </component>
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="azul-15" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CompilerConfiguration\">\n    <annotationProcessing>\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\n        <outputRelativeToContentRoot value=\"true\" />\n      </profile>\n      <profile name=\"Annotation profile for Sasha\" enabled=\"true\">\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\n        <outputRelativeToContentRoot value=\"true\" />\n        <processorPath useClasspath=\"false\">\n          <entry name=\"$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.3.Final/mapstruct-processor-1.5.3.Final.jar\" />\n          <entry name=\"$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.3.Final/mapstruct-1.5.3.Final.jar\" />\n        </processorPath>\n        <module name=\"Sasha\" />\n      </profile>\n    </annotationProcessing>\n    <bytecodeTargetLevel>\n      <module name=\"FreelanceLife\" target=\"15\" />\n      <module name=\"RestTemplate\" target=\"15\" />\n    </bytecodeTargetLevel>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -1,26 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="CompilerConfiguration">
+-    <annotationProcessing>
+-      <profile name="Maven default annotation processors profile" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-      </profile>
+-      <profile name="Annotation profile for Sasha" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-        <processorPath useClasspath="false">
+-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.3.Final/mapstruct-processor-1.5.3.Final.jar" />
+-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.3.Final/mapstruct-1.5.3.Final.jar" />
+-        </processorPath>
+-        <module name="Sasha" />
+-      </profile>
+-    </annotationProcessing>
+     <bytecodeTargetLevel>
+-      <module name="FreelanceLife" target="15" />
+-      <module name="RestTemplate" target="15" />
++      <module name="Sasha" target="15" />
+     </bytecodeTargetLevel>
+   </component>
+ </project>
+\ No newline at end of file

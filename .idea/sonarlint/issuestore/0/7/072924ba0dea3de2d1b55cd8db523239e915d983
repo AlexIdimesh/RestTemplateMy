@@ -1,0 +1,10 @@
+
+g	java:S112="FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŸÑ“á1
+t
+java:S1192$"RUse already-defined constant 'CONTENT_JSON' instead of duplicating its value here.(›ı’Àøÿÿÿÿ8ŸÑ“á1
+K
+java:S1948")Make "service" transient or serializable.(øéÀ ıÿÿÿÿ8ŸŸÑ“á1
+N
+java:S1948",Make "jsonMapper" transient or serializable.(×»³®ùÿÿÿÿ8ŸŸÑ“á1
+W
+java:S1161H":Add the "@Override" annotation above this method signature(¦Ù÷÷8¥ŸÑ“á1
