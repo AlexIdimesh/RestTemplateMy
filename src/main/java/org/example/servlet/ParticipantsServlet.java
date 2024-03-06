@@ -9,41 +9,50 @@ import org.example.service.serverImpl.ParticipantsService;
 import org.example.servlet.dto.ParticipantsDTO;
 import org.example.util.json.jsonParticipant.JsonConvectorsPar;
 import org.example.util.json.jsonParticipant.JsonConvectorsParImpl;
-import java.io.BufferedReader;
+
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet(name = "ParticipantsEntity", value = "/participants")
 public class ParticipantsServlet extends HttpServlet {
 
-    private final ParticipantsService service = new ParticipantsServiceImpl();
+    private ParticipantsService service = new ParticipantsServiceImpl();
 
-    private final JsonConvectorsPar jsonMapper = new JsonConvectorsParImpl();
+    private JsonConvectorsPar jsonMapper = new JsonConvectorsParImpl();
+    private static final String PARAMETER_ID = "id";
+    private static final String CONTENT_JSON = "application/json";
+
+    public ParticipantsServlet(ParticipantsService service, JsonConvectorsPar jsonMapper) {
+        this.service = service;
+        this.jsonMapper = jsonMapper;
+    }
+
+    public ParticipantsServlet() {
+    }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("application/json");
         String participantsId = req.getParameter("id");
-        String participantsIdEvent = req.getParameter("parId");
+        String participantsEventsId = req.getParameter("tagId");
+        if (participantsEventsId != null) {
+            ParticipantsDTO participantsDTO = service.findById(Long.parseLong(participantsEventsId));
+            String json = jsonMapper.toJson(participantsDTO);
+            if (participantsDTO == null) {
+                resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                return;
+            }
+            ServletUtil.sendJsonResponse(json, resp);
+        }
         if (participantsId != null) {
             ParticipantsDTO participantsDTO = service.findById(Long.parseLong(participantsId));
             String json = jsonMapper.toJson(participantsDTO);
-            try (PrintWriter printWriter = resp.getWriter()) {
-                printWriter.println(json);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            if (participantsDTO != null) {
+                resp.setStatus(HttpServletResponse.SC_OK);
+                ServletUtil.sendJsonResponse(json, resp);
             }
-        }
-        if (participantsIdEvent != null) {
-            List<ParticipantsDTO> participantsDTO = service.findByIdEvents(Long.parseLong(participantsIdEvent));
-            String json = jsonMapper.toJson(participantsDTO);
-            try (PrintWriter printWriter = resp.getWriter()) {
-                printWriter.println(json);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
         } else {
             List<ParticipantsDTO> participantsDTOS;
             try {
@@ -52,69 +61,56 @@ public class ParticipantsServlet extends HttpServlet {
                 throw new RuntimeException(e);
             }
             String json = jsonMapper.toJson(participantsDTOS);
-            try (PrintWriter printWriter = resp.getWriter()) {
-                printWriter.println(json);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            if (!participantsDTOS.isEmpty()) {
+                resp.setStatus(HttpServletResponse.SC_OK);
+                ServletUtil.sendJsonResponse(json, resp);
             }
+            resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
         }
     }
 
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/plain");
-        resp.setCharacterEncoding("UTF-8");
-        resp.getWriter().write("Event saved successfully");
-        StringBuilder requestBody = new StringBuilder();
-        BufferedReader reader = req.getReader();
-        String line;
-        while ((line = reader.readLine()) != null) {
-            requestBody.append(line);
-        }
-        String requestBodyString = requestBody.toString();
-        ParticipantsDTO participantsDTO = jsonMapper.toDTO(requestBodyString);
-        ParticipantsDTO saveDto = service.save(participantsDTO);
-        if (saveDto != null) {
-            resp.setStatus(HttpServletResponse.SC_OK);
-            resp.getWriter().write("Event save successfully");
-        } else {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
+        try {
+            String jsonBody = ServletUtil.getJsonBody(req);
+            var bodyDto = jsonMapper.toDTO(jsonBody);
+            var resultDto = service.save(bodyDto);
+            if (resultDto != null && resultDto.getId() != null) {
+                String jsonResp = jsonMapper.toJson(resultDto);
+                resp.setContentType(CONTENT_JSON);
+                resp.setStatus(HttpServletResponse.SC_CREATED);
+                ServletUtil.sendJsonResponse(jsonResp, resp);
+            }
+        } catch (IOException e) {
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            resp.getWriter().write("Failed to save event");
         }
+        resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     }
 
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String participantId = req.getParameter("parId");
-        boolean deleteResult = service.deleteById(Long.valueOf(participantId));
-        if (deleteResult) {
-            resp.setStatus(HttpServletResponse.SC_OK);
-            resp.getWriter().write("Event with ID " + participantId + " has been successfully deleted");
-        } else {
-            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            resp.getWriter().write("Failed to delete event with ID " + participantId);
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) {
+        Long id = Long.parseLong(req.getParameter(PARAMETER_ID));
+        if (service.deleteById(id)) {
+            resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+            return;
         }
+        resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     }
 
     @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/plain");
-        resp.setCharacterEncoding("UTF-8");
-        resp.getWriter().write("Event saved successfully");
-        StringBuilder requestBody = new StringBuilder();
-        BufferedReader reader = req.getReader();
-        String line;
-        while ((line = reader.readLine()) != null) {
-            requestBody.append(line);
-        }
-        String requestBodyString = requestBody.toString();
-        ParticipantsDTO participantsDTO = jsonMapper.toDTO(requestBodyString);
-        ParticipantsDTO update = service.upDated(participantsDTO);
-        if (update != null) {
-            resp.setStatus(HttpServletResponse.SC_OK);
-            resp.getWriter().write("Event updated successfully");
-        } else {
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp){
+        try {
+            String jsonBody = ServletUtil.getJsonBody(req);
+            var updatedDto = jsonMapper.toDTO(jsonBody);
+            ParticipantsDTO participantsDTO = null;
+            if (updatedDto.getId() != null) {
+                participantsDTO = service.upDated(updatedDto);
+            }
+            if (participantsDTO != null && participantsDTO.getId() != null) {
+                resp.setStatus(HttpServletResponse.SC_OK);
+            }
+            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        } catch (IOException e) {
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            resp.getWriter().write("Failed to update event");
         }
     }
 }

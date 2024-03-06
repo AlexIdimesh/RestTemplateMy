@@ -1,11 +1,14 @@
 package org.example.repository.rep;
 
+import org.example.model.EventsTagEntity;
+
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Optional;
 
 public interface EventsTagEntityRepository <T,K> {
 
-    T findById(K id);
+    Optional<EventsTagEntity> findById(K id);
 
     boolean deleteById(K id);
 

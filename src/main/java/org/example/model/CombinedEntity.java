@@ -14,12 +14,13 @@ public class CombinedEntity {
         return eventsEntity;
     }
 
-    public void setEventsEntity(EventsEntity eventsEntity) {
-        this.eventsEntity = eventsEntity;
-    }
 
     public EventsTagEntity getEventsTagEntity() {
         return eventsTagEntity;
+    }
+
+    public void setEventsEntity(EventsEntity eventsEntity) {
+        this.eventsEntity = eventsEntity;
     }
 
     public void setEventsTagEntity(EventsTagEntity eventsTagEntity) {

@@ -2,8 +2,8 @@ package org.example.service.impl;
 
 import org.example.model.CombinedEntity;
 import org.example.model.EventsEntity;
-import org.example.repository.rep.ext.EntityEntityRepositoryExt;
 import org.example.repository.impl.EventsEntityRepositoryImpl;
+import org.example.repository.rep.ext.EntityEntityRepositoryExt;
 import org.example.service.serverImpl.EventsService;
 import org.example.servlet.dto.CombinedEntityDTO;
 import org.example.servlet.dto.EventDTO;
@@ -23,6 +23,14 @@ public class EventsServiceImpl implements EventsService {
 
     private CombinedEntityMapstruct mapstruct = CombinedEntityMapstruct.INSTANCE;
 
+    public EventsServiceImpl(EntityEntityRepositoryExt repository, EventsMapperMapstruct mapper, CombinedEntityMapstruct mapstruct) {
+        this.repository = repository;
+        this.mapper = mapper;
+        this.mapstruct = mapstruct;
+    }
+
+    public EventsServiceImpl() {
+    }
 
     @Override
     public EventDTO save(EventDTO eventDTO) {
@@ -34,14 +42,16 @@ public class EventsServiceImpl implements EventsService {
         List<CombinedEntity> entityList = repository.findAllEventsByEventTag(id);
         return entityList.stream().map(mapstruct::toDTO).collect(Collectors.toList());
     }
+
     @Override
     public EventDTO findById(Long id) {
-        EventsEntity eventsEntity = repository.findById(id);
+        EventsEntity eventsEntity = repository.findById(id).orElse(null);
         return mapper.toDTO(eventsEntity);
     }
+
     @Override
     public List<EventDTO> findAll() throws SQLException, ClassNotFoundException {
-        return repository.findAll().stream().map(mapper :: toDTO).collect(toList());
+        return repository.findAll().stream().map(mapper::toDTO).collect(toList());
     }
 
     @Override

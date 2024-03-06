@@ -2,13 +2,13 @@ package org.example.repository.rep;
 
 import org.example.model.CombinedEntity;
 import org.example.model.EventsEntity;
-import org.example.model.EventsTagEntity;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Optional;
 
 public interface EntityRepository<T, K> {
-    T findById(K id);
+    Optional<EventsEntity> findById(K id);
 
     List<CombinedEntity> findAllEventsByEventTag(K id);
 

@@ -1,7 +1,5 @@
 package org.example.model;
 
-import java.util.List;
-
 public class EventsEntity {
     private Long id;
 
@@ -10,6 +8,12 @@ public class EventsEntity {
     private String city;
 
     public EventsEntity() {
+    }
+
+    public EventsEntity(Long id, String name, String city) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
     }
 
     public Long getId() {

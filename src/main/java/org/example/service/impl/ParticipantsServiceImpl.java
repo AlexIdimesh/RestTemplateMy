@@ -1,22 +1,29 @@
 package org.example.service.impl;
 
 import org.example.model.ParticipantsEntity;
-import org.example.repository.impl.ParticipantsEntityEntityRepositoryImpl;
+import org.example.repository.impl.ParticipantsEntityRepositoryImpl;
 import org.example.repository.rep.ext.ParticipantsEntityEntityRepositoryExt;
 import org.example.service.serverImpl.ParticipantsService;
 import org.example.servlet.dto.ParticipantsDTO;
 import org.example.servlet.mapper.ParticipantsMapperMapstruct;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
 public class ParticipantsServiceImpl implements ParticipantsService {
 
-    private ParticipantsEntityEntityRepositoryExt repository = new ParticipantsEntityEntityRepositoryImpl();
+    private ParticipantsEntityEntityRepositoryExt repository = new ParticipantsEntityRepositoryImpl();
     private ParticipantsMapperMapstruct mapper = ParticipantsMapperMapstruct.INSTANCE;
+
+    public ParticipantsServiceImpl(ParticipantsEntityEntityRepositoryExt repository, ParticipantsMapperMapstruct mapper) {
+        this.repository = repository;
+        this.mapper = mapper;
+    }
+
+    public ParticipantsServiceImpl() {
+    }
 
     @Override
     public ParticipantsDTO save(ParticipantsDTO participantsDTO) {
@@ -25,7 +32,7 @@ public class ParticipantsServiceImpl implements ParticipantsService {
 
     @Override
     public ParticipantsDTO findById(Long id) {
-        ParticipantsEntity participantsEntity = repository.findById(id);
+        ParticipantsEntity participantsEntity = repository.findById(id).orElse(null);
         return mapper.toDto(participantsEntity);
     }
 

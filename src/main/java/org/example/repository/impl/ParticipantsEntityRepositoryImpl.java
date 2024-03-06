@@ -7,27 +7,25 @@ import org.example.repository.rep.ext.ParticipantsEntityEntityRepositoryExt;
 import org.example.repository.mapper.partipants.ParticipantsResultSetMapper;
 import org.example.repository.mapper.partipants.ParticipantsResultSetMapperImpl;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
-public class ParticipantsEntityEntityRepositoryImpl implements ParticipantsEntityEntityRepositoryExt {
+public class ParticipantsEntityRepositoryImpl implements ParticipantsEntityEntityRepositoryExt {
     private ParticipantsResultSetMapper resultSetMapper;
     private ConnectionManager connectionManager;
-    public ParticipantsEntityEntityRepositoryImpl() {
+    public ParticipantsEntityRepositoryImpl() {
         this(new DBConnection(), new ParticipantsResultSetMapperImpl());
     }
 
-    public ParticipantsEntityEntityRepositoryImpl(DBConnection dbConnection, ParticipantsResultSetMapperImpl participantsResultSetMapper) {
+    public ParticipantsEntityRepositoryImpl(DBConnection dbConnection, ParticipantsResultSetMapperImpl participantsResultSetMapper) {
         this.connectionManager = dbConnection;
         this.resultSetMapper = participantsResultSetMapper;
     }
 
     @Override
-    public ParticipantsEntity findById(Long id) {
+    public Optional<ParticipantsEntity> findById(Long id) {
         try(Connection connection = connectionManager.getConnection()) {
             PreparedStatement preparedStatement =
                     connection.prepareStatement
@@ -38,7 +36,7 @@ public class ParticipantsEntityEntityRepositoryImpl implements ParticipantsEntit
             if (resultSet.next()) {
                 participantsEntity = resultSetMapper.map(resultSet);
             }
-            return participantsEntity;
+            return Optional.ofNullable(participantsEntity);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
@@ -100,39 +98,38 @@ public class ParticipantsEntityEntityRepositoryImpl implements ParticipantsEntit
         try(Connection connection = connectionManager.getConnection()) {
             PreparedStatement preparedStatement =
                     connection.prepareStatement
-                            ("INSERT INTO participants(events_id,participants_name, participants_number) VALUES(?,?,?)");
+                            ("INSERT INTO participants(events_id,participants_name, participants_number) VALUES(?,?,?)", Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setLong(1, participantsEntity.getId());
             preparedStatement.setString(2, participantsEntity.getName());
             preparedStatement.setString(3, participantsEntity.getNumber());
             preparedStatement.executeUpdate();
-            ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
-            if (generatedKeys.next()) {
-                participantsEntity.setId(generatedKeys.getLong(1));
-            } else {
-                throw new SQLException("Вставка неудачна, не удалось получить сгенерированный ID.");
-            }
+            return participantsEntity;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        return participantsEntity;
+
     }
 
     @Override
     public ParticipantsEntity upDated(ParticipantsEntity participantsEntity) {
-        try(Connection connection = connectionManager.getConnection()) {
-            PreparedStatement preparedStatement =
-                    connection.prepareStatement
-                            ("UPDATE participants SET participants_number = ?, participants_name = ? WHERE participants_id = ?");
-            preparedStatement.setObject(1,participantsEntity.getNumber());
-            preparedStatement.setObject(2,participantsEntity.getName());
-            preparedStatement.setObject(3,participantsEntity.getId());
-            preparedStatement.executeUpdate();
-            ResultSet resultSet = preparedStatement.executeQuery();
-            return resultSetMapper.map(resultSet);
+        try (Connection connection = connectionManager.getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                    "UPDATE participants SET participants_number = ?, participants_name = ? WHERE participants_id = ?");
+            preparedStatement.setObject(1, participantsEntity.getNumber());
+            preparedStatement.setObject(2, participantsEntity.getName());
+            preparedStatement.setObject(3, participantsEntity.getId());
+            int rowsUpdated = preparedStatement.executeUpdate();
+
+            if (rowsUpdated > 0) {
+                return participantsEntity;
+            } else {
+                throw new RuntimeException("Не удалось обновить запись с ID: " + participantsEntity.getId());
+            }
         } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException();
+            throw new RuntimeException("Ошибка при обновлении записи", e);
         }
     }
+
 }

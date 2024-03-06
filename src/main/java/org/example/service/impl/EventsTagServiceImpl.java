@@ -18,6 +18,13 @@ public class EventsTagServiceImpl implements EventsTagService {
 
     private EventsTagMapperMapstruct mapper = EventsTagMapperMapstruct.INSTANCE;
 
+    public EventsTagServiceImpl(EventsTagEntityRepositoryExt repository, EventsTagMapperMapstruct mapper) {
+        this.repository = repository;
+        this.mapper = mapper;
+    }
+
+    public EventsTagServiceImpl() {
+    }
 
     @Override
     public EventsTagDTO save(EventsTagDTO eventsTagDTO) {
@@ -26,7 +33,7 @@ public class EventsTagServiceImpl implements EventsTagService {
 
     @Override
     public EventsTagDTO findById(Long id) {
-        EventsTagEntity eventsTagEntity =  repository.findById(id);
+        EventsTagEntity eventsTagEntity =  repository.findById(id).orElse(null);
         return mapper.toDto(eventsTagEntity);
     }
 
@@ -42,6 +49,7 @@ public class EventsTagServiceImpl implements EventsTagService {
 
     @Override
     public EventsTagDTO upDated(EventsTagDTO eventsTagDTO) {
-        return mapper.toDto(repository.save(mapper.toEntity(eventsTagDTO)));
+        return mapper.toDto(repository.upDated(mapper.toEntity(eventsTagDTO)));
+
     }
 }

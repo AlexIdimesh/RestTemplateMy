@@ -13,6 +13,7 @@ import org.example.repository.mapper.events.EventsResultSetMapperImpl;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class EventsEntityRepositoryImpl implements EntityEntityRepositoryExt {
     private EventsResultSetMapper resultSetMapper;
@@ -29,24 +30,26 @@ public class EventsEntityRepositoryImpl implements EntityEntityRepositoryExt {
         this.resultSetMapper = eventsResultSetMapper;
         this.resultSetMapperTag = eventsTagResultSetMapper;
     }
+
     @Override
-    public EventsEntity findById(Long id) {
-        try(Connection connection = connectionManager.getConnection()){
+    public Optional<EventsEntity> findById(Long id) {
+        try (Connection connection = connectionManager.getConnection()) {
             PreparedStatement preparedStatement =
-                     connection.prepareStatement("SELECT * FROM events WHERE events_id = ?");
+                    connection.prepareStatement("SELECT * FROM events WHERE events_id = ?");
             preparedStatement.setObject(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             EventsEntity eventsEntity = null;
             if (resultSet.next()) {
                 eventsEntity = resultSetMapper.map(resultSet);
             }
-            return eventsEntity;
+            return Optional.ofNullable(eventsEntity);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
+
     @Override
     public List<CombinedEntity> findAllEventsByEventTag(Long id) {
         List<CombinedEntity> entityList = new ArrayList<>();
@@ -83,9 +86,10 @@ public class EventsEntityRepositoryImpl implements EntityEntityRepositoryExt {
             throw new RuntimeException(e);
         }
     }
+
     @Override
     public boolean deleteById(Long id) {
-        try(Connection connection = connectionManager.getConnection()) {
+        try (Connection connection = connectionManager.getConnection()) {
             PreparedStatement preparedStatement =
                     connection.prepareStatement("DELETE FROM events WHERE events_id = ?");
             preparedStatement.setLong(1, id);
@@ -94,41 +98,38 @@ public class EventsEntityRepositoryImpl implements EntityEntityRepositoryExt {
             throw new RuntimeException(e);
         }
     }
+
     @Override
     public EventsEntity save(EventsEntity eventsEntity) {
         try (Connection connection = connectionManager.getConnection()) {
             PreparedStatement preparedStatement =
-                    connection.prepareStatement("INSERT INTO events (events_name, events_city) VALUES(?,?)");
+                    connection.prepareStatement("INSERT INTO events (events_name, events_city) VALUES(?,?)", Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, eventsEntity.getName());
             preparedStatement.setString(2, eventsEntity.getCity());
             preparedStatement.executeUpdate();
-            ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
-            if (generatedKeys.next()) {
-                eventsEntity.setId(generatedKeys.getLong(1));
-            } else {
-                throw new SQLException("Вставка неудачна, не удалось получить сгенерированный ID.");
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (ClassNotFoundException e) {
+            return eventsEntity;
+        } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        return eventsEntity;
     }
+
     @Override
     public EventsEntity upDated(EventsEntity eventsEntity) {
-        try(Connection connection = connectionManager.getConnection()) {
-            PreparedStatement preparedStatement =
-                    connection.prepareStatement(
-                            "UPDATE events SET events_city = ?, events_name = ? WHERE events_id = ?");
+        try (Connection connection = connectionManager.getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                    "UPDATE events SET events_city = ?, events_name = ? WHERE events_id = ?");
             preparedStatement.setObject(1, eventsEntity.getCity());
-            preparedStatement.setObject(2,eventsEntity.getName());
-            preparedStatement.setObject(3,eventsEntity.getId());
-            preparedStatement.executeUpdate();
-            ResultSet resultSet = preparedStatement.executeQuery();
-            return resultSetMapper.map(resultSet);
+            preparedStatement.setObject(2, eventsEntity.getName());
+            preparedStatement.setObject(3, eventsEntity.getId());
+            int rowsUpdated = preparedStatement.executeUpdate();
+
+            if (rowsUpdated > 0) {
+                return eventsEntity;
+            } else {
+                throw new RuntimeException("Не удалось обновить запись с ID: " + eventsEntity.getId());
+            }
         } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException();
+            throw new RuntimeException("Ошибка при обновлении записи", e);
         }
     }
 }

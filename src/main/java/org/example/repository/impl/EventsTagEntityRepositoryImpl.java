@@ -7,18 +7,17 @@ import org.example.repository.mapper.eventstags.EventsTagResultSetMapper;
 import org.example.repository.mapper.eventstags.EventsTagResultSetMapperImpl;
 import org.example.repository.rep.ext.EventsTagEntityRepositoryExt;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class EventsTagEntityRepositoryImpl implements EventsTagEntityRepositoryExt {
 
     private ConnectionManager connectionManager;
 
     private EventsTagResultSetMapper resultSetMapper;
+
 
     public EventsTagEntityRepositoryImpl() {
         this(new DBConnection(), new EventsTagResultSetMapperImpl());
@@ -30,7 +29,7 @@ public class EventsTagEntityRepositoryImpl implements EventsTagEntityRepositoryE
     }
 
     @Override
-    public EventsTagEntity findById(Long id) {
+    public Optional<EventsTagEntity> findById(Long id) {
         try(Connection connection = connectionManager.getConnection()){
             PreparedStatement preparedStatement =
                     connection.prepareStatement("SELECT * FROM  event_tags WHERE event_tag_id = ?");
@@ -40,7 +39,7 @@ public class EventsTagEntityRepositoryImpl implements EventsTagEntityRepositoryE
             if (resultSet.next()) {
                 eventsTagEntity = resultSetMapper.map(resultSet);
             }
-            return eventsTagEntity;
+            return Optional.ofNullable(eventsTagEntity);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
@@ -80,38 +79,31 @@ public class EventsTagEntityRepositoryImpl implements EventsTagEntityRepositoryE
     public EventsTagEntity save(EventsTagEntity eventsTagEntity) {
         try(Connection connection = connectionManager.getConnection()) {
             PreparedStatement preparedStatement =
-                    connection.prepareStatement("INSERT INTO event_tags (event_tag_author, event_tag_name) VALUES(?,?)");
+                    connection.prepareStatement("INSERT INTO event_tags (event_tag_author, event_tag_name) VALUES(?,?)", Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, eventsTagEntity.getTagName());
             preparedStatement.setString(2, eventsTagEntity.getTagAuthor());
             preparedStatement.executeUpdate();
-            ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
-            if (generatedKeys.next()) {
-                eventsTagEntity.setId(generatedKeys.getLong(1));
-            } else {
-                throw new SQLException("Вставка неудачна, не удалось получить сгенерированный ID.");
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (ClassNotFoundException e) {
+            return eventsTagEntity;
+        } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        return eventsTagEntity;
     }
-
     @Override
     public EventsTagEntity upDated(EventsTagEntity eventsTagEntity) {
-        try(Connection connection = connectionManager.getConnection()) {
-            PreparedStatement preparedStatement =
-                    connection.prepareStatement(
-                            "UPDATE event_tags SET event_tag_author = ?, event_tag_name = ? WHERE event_tag_id = ?");
-            preparedStatement.setObject(1,eventsTagEntity.getTagAuthor());
-            preparedStatement.setObject(2,eventsTagEntity.getTagName());
-            preparedStatement.setObject(3,eventsTagEntity.getId());
-            preparedStatement.executeUpdate();
-            ResultSet resultSet = preparedStatement.executeQuery();
-            return resultSetMapper.map(resultSet);
+        try (Connection connection = connectionManager.getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                    "UPDATE event_tags SET event_tag_author = ?, event_tag_name = ? WHERE event_tag_id = ?");
+            preparedStatement.setObject(1, eventsTagEntity.getTagAuthor());
+            preparedStatement.setObject(2, eventsTagEntity.getTagName());
+            preparedStatement.setObject(3, eventsTagEntity.getId());
+            int rowsUpdated = preparedStatement.executeUpdate();
+            if (rowsUpdated > 0) {
+                return eventsTagEntity;
+            } else {
+                throw new RuntimeException("Не удалось обновить запись с ID: " + eventsTagEntity.getId());
+            }
         } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException();
+            throw new RuntimeException("Ошибка при обновлении записи", e);
         }
     }
 }

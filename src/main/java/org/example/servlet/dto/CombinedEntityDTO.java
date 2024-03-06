@@ -17,16 +17,9 @@ public class CombinedEntityDTO {
         return eventsEntity;
     }
 
-    public void setEventsEntity(EventsEntity eventsEntity) {
-        this.eventsEntity = eventsEntity;
-    }
 
     public EventsTagEntity getEventsTagEntity() {
         return eventsTagEntity;
-    }
-
-    public void setEventsTagEntity(EventsTagEntity eventsTagEntity) {
-        this.eventsTagEntity = eventsTagEntity;
     }
 
     @Override

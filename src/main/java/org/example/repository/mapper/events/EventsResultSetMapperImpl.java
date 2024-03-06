@@ -1,8 +1,5 @@
 package org.example.repository.mapper.events;
-
 import org.example.model.EventsEntity;
-import org.example.model.EventsTagEntity;
-import org.example.repository.mapper.events.EventsResultSetMapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
