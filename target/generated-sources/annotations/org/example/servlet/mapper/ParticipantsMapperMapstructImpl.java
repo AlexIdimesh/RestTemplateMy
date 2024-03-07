@@ -6,8 +6,8 @@ import org.example.servlet.dto.ParticipantsDTO;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-02-06T17:06:53+0300",
-    comments = "version: 1.5.3.Final, compiler: javac, environment: Java 15.0.10 (Azul Systems, Inc.)"
+    date = "2024-03-07T21:05:11+0300",
+    comments = "version: 1.5.3.Final, compiler: javac, environment: Java 20.0.1 (Oracle Corporation)"
 )
 public class ParticipantsMapperMapstructImpl implements ParticipantsMapperMapstruct {
 

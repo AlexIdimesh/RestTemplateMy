@@ -39,7 +39,7 @@ class EventsEntityRepositoryImplTest {
     static void beforeAll() {
         Properties properties = new Properties();
         properties.setProperty("db.url", container.getJdbcUrl());
-        properties.setProperty("db.name", TEST_DB_USERNAME);
+        properties.setProperty("db.username", TEST_DB_USERNAME);
         properties.setProperty("db.password", TEST_DB_PASSWORD);
         DBConnection connectionManager = new DBConnection(properties);
         repository = new EventsEntityRepositoryImpl(connectionManager, new EventsResultSetMapperImpl(), new EventsTagResultSetMapperImpl());
