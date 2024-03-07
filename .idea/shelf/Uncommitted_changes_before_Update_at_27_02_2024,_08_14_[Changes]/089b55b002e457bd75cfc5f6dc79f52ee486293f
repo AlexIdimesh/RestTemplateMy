@@ -1,7 +1,0 @@
-
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾æ·œØ1
-g	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¿æ·œØ1
-r	java:S116
-"VRename this field "DB_USERNAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Á¹º8Îæ·œØ1
-w	java:S116"VRename this field "DB_PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“€ã½úÿÿÿÿ8Ïæ·œØ1
-r	java:S116"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÐÌ üÿÿÿÿ8Ïæ·œØ1
